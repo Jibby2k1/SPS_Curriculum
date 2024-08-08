@@ -3,7 +3,6 @@ Repository hosting a series of educational workshops at the University of Florid
 
 | Workshop Series | Workshop |  Contributors |
 |----------|----------|--------------|
-
 | [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Calculus](./Workshops/Intro_Math/Intro_Calculus/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Linear Algebra](./Workshops/Intro_Math/Intro_LinAlg/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Statistics](./Workshops/Intro_Math/Intro_Stats/) | [Raul](https://github.com/Jibby2k1)
@@ -26,9 +25,9 @@ Repository hosting a series of educational workshops at the University of Florid
 We encourage community contributions:
 1. Fork the repo.
 2. Create your feature branch.
-3. Commit your improvements.
+3. Commit your changes.
 4. Push to your branch.
 5. Submit a PR.
 
 ## Acknowledgements
-Special thanks to all our workshop creators and contributors, as well as our participants who continue to attend the in person sessions.
+Special thanks to the community for making this possible.

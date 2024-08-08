@@ -3,10 +3,9 @@ Repository hosting a series of educational workshops at the University of Florid
 
 | Workshop Series | Workshop |  Contributors |
 |----------|----------|--------------|
-| [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Calculus](./Workshops/Intro_Math/Intro_Calculus/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Linear Algebra](./Workshops/Intro_Math/Intro_LinAlg/) | [Raul](https://github.com/Jibby2k1)
-| [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Statistics](./Workshops/Intro_Math/Intro_Stats/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Calculus](./Workshops/Intro_Math/Intro_Calculus/) | [Raul](https://github.com/Jibby2k1)
+| [Introduction to Mathematics](./Workshops/Intro_Math/) | [Introduction to Statistics](./Workshops/Intro_Math/Intro_Stats/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Functional Programming](./Workshops/Intro_Func_Prog/) | [Introduction to Python](./Workshops/Intro_Func_Prog/Intro_Python/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Functional Programming](./Workshops/Intro_Func_Prog/) | [Introduction to C](./Workshops/Intro_Func_Prog/Intro_C/) | [Raul](https://github.com/Jibby2k1)
 | [Introduction to Functional Programming](./Workshops/Intro_Func_Prog/) | [Introduction to Fortran](./Workshops/Intro_Func_Prog/Intro_Fortran/) | [Raul](https://github.com/Jibby2k1)

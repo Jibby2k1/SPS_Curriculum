@@ -44,7 +44,7 @@ Repository hosting a series of educational workshops at the University of Florid
   </tr>
   <tr>
     <td rowspan="3"><a href="./Intro_Dev_Prog/">Introduction to Device Programming</a></td>
-    <td><a href="./Intro_Dev_Prog/Intro_GPU/">Introduction to GPU Systems</a></td>
+    <td><a href="./Intro_Dev_Prog/Intro_GPU.ipynb">Introduction to GPU Systems</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>

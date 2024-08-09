@@ -26,7 +26,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Func_Prog/Intro_C/">Introduction to C</a></td>
+    <td><a href="./Intro_Func_Prog/Intro_C.ipynb">Introduction to C</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>

@@ -1,2 +1,5 @@
 # PyTorch tensors (can be very big)
 *.pt
+
+# virtual environment folders
+/env

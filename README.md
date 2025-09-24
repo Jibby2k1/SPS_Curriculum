@@ -52,8 +52,8 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Dev_Prog/Hard_Acc_Sys/">Hardware Accelerated Systems</a></td>
-    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+    <td><a href="./Intro_Dev_Prog/intro_pytorch/intro_pytorch.ipynb">Introduction to PyTorch</a></td>
+    <td><a href="https://github.com/kaddu341">Awwab</a></td>
   </tr>
   <tr>
     <td rowspan="2"><a href="./Intro_DSP/">Introduction to Digital Signal Processing</a></td>
@@ -75,22 +75,22 @@ Repository hosting a series of educational workshops at the University of Florid
   </tr>
   <tr>
     <td rowspan="2"><a href="./Intro_Mach_Learn/">Introduction to Machine Learning</a></td>
-    <td><a href="./Intro_Mach_Learn/Intro_ML/">Introduction to Machine Learning</a></td>
+    <td><a href="./Intro_Mach_Learn/Intro_ANN/">Introduction to Artifical Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Mach_Learn/Intro_DL/">Introduction to Deep Learning</a></td>
+    <td><a href="./Intro_Mach_Learn/Intro_CNN/">Introduction to Convolutional Neural Networks</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+    <tr>
+    <td><a href="./Intro_Mach_Learn/Scale_NN/">Scaling Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="./Intro_DL_4_Physics/">Introduction to Physics Informed Machine Learning</a></td>
-    <td><a href="./Intro_DL_4_Physics/intro_pytorch/intro_pytorch.ipynb">Introduction to PyTorch</a></td>
+    <td><a href="./Intro_Mach_Learn/intro_transformers/Intro_transformers.ipynb">Introduction to Transformers</a></td>
     <td><a href="https://github.com/kaddu341">Awwab</a></td>
   </tr>
-  <tr>
-    <td><a href="./Intro_DL_4_Physics/intro_transformers/Intro_transformers.ipynb">Introduction to Transformers</a></td>
-    <td><a href="https://github.com/kaddu341">Awwab</a></td>
-  </tr>
+
 </table>
 
 ## How to Contribute

@@ -65,7 +65,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="4"><a href="./Intro_Time_Series/">Introduction to Time Series</a></td>
+    <td rowspan="2"><a href="./Intro_Time_Series/">Introduction to Time Series</a></td>
     <td><a href="./Intro_Time_series/Intro_TSML/">Introduction to Time Series ML</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
@@ -74,7 +74,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="./Intro_Mach_Learn/">Introduction to Machine Learning</a></td>
+    <td rowspan="4"><a href="./Intro_Mach_Learn/">Introduction to Machine Learning</a></td>
     <td><a href="./Intro_Mach_Learn/Intro_ANN/">Introduction to Artifical Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>

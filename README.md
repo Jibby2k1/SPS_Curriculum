@@ -8,7 +8,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <th>Contributors</th>
   </tr>
   <tr>
-    <td rowspan="4"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
+    <td rowspan="6"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
     <td><a href="./Intro_Math/Analysis/Real_Number_Systems.ipynb">Real Number Systems</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
@@ -21,7 +21,15 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Math/Optimization/">Optimization</a></td>
+    <td><a href="./Intro_Math/Analysis/Measure_Theory.ipynb">Measure Theory</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_Math/Analysis/Random_Variables.ipynb">Random Variables</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_Math/Analysis/Independence.ipynb">Independence</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>

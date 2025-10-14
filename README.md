@@ -8,7 +8,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <th>Contributors</th>
   </tr>
   <tr>
-    <td rowspan="5"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
+    <td rowspan="4"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
     <td><a href="./Intro_Math/Analysis/Real_Number_Systems.ipynb">Real Number Systems</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>

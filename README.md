@@ -1,27 +1,23 @@
 # SPS Curriculum
-Repository hosting a series of educational workshops at the University of Florida (since 2024-2025) covering topics relevant to Signal Processing & Machine Learning Systems.
+Repository hosting a series of educational workshops at the University of Florida (since 2024) covering topics relevant to Signal Processing & Machine Learning Systems.
 
 <table>
   <tr>
+    <th>Topics</th>
     <th>Workshop Series</th>
-    <th>Workshop</th>
     <th>Contributors</th>
   </tr>
   <tr>
     <td rowspan="5"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
-    <td><a href="./Intro_Math/Intro_LinAlg/">Introduction to Linear Algebra Tools</a></td>
+    <td><a href="./Intro_Math/Analysis/Real_Number_Systems.ipynb">Real Number Systems</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Math/Intro_Calculus/">Introduction to Calculus Tools</a></td>
+    <td><a href="./Intro_Math/Analysis/Basic_Topology.ipynb">Basic Topology</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Math/Intro_Stats/">Introduction to Statistics Tools</a></td>
-    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
-  </tr>
-  <tr>
-    <td><a href="./Intro_Math/Analysis/">Analysis</a></td>
+    <td><a href="./Intro_Math/Analysis/Numerical_Sequences_and_Series.ipynb">Numerical Sequences and Series</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>

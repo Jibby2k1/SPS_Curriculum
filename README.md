@@ -1,23 +1,35 @@
 # SPS Curriculum
-Repository hosting a series of educational workshops at the University of Florida for 2024-2025 covering topics relevant to Signal Processing Systems.
+Repository hosting a series of educational workshops at the University of Florida (since 2024) covering topics relevant to Signal Processing & Machine Learning Systems.
 
 <table>
   <tr>
+    <th>Topics</th>
     <th>Workshop Series</th>
-    <th>Workshop</th>
     <th>Contributors</th>
   </tr>
   <tr>
-    <td rowspan="3"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
-    <td><a href="./Intro_Math/Intro_LinAlg/">Introduction to Linear Algebra</a></td>
+    <td rowspan="6"><a href="./Intro_Math/">Introduction to Mathematics</a></td>
+    <td><a href="./Intro_Math/Analysis/Real_Number_Systems.ipynb">Real Number Systems</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Math/Intro_Calculus/">Introduction to Calculus</a></td>
+    <td><a href="./Intro_Math/Analysis/Basic_Topology.ipynb">Basic Topology</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Math/Intro_Stats/">Introduction to Statistics</a></td>
+    <td><a href="./Intro_Math/Analysis/Numerical_Sequences_and_Series.ipynb">Numerical Sequences and Series</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_Math/Analysis/Measure_Theory.ipynb">Measure Theory</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_Math/Analysis/Random_Variables.ipynb">Random Variables</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_Math/Analysis/Independence.ipynb">Independence</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
@@ -30,7 +42,7 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Func_Prog/Intro_Fortran/">Introduction to Fortran</a></td>
+    <td><a href="./Intro_Func_Prog/Intro_MATLAB/">Introduction to Matlab</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
@@ -43,16 +55,21 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="3"><a href="./Intro_Dev_Prog/">Introduction to Device Programming</a></td>
-    <td><a href="./Intro_Dev_Prog/Intro_GPU.ipynb">Introduction to GPU Systems</a></td>
+    <td rowspan="3"><a href="./Intro_GPU/">Introduction to GPU Systems</a></td>
+    <td><a href="./Intro_GPU/Intro_GPU.ipynb">Introduction to Numba & CuPy</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Dev_Prog/Intro_FPGA/">Introduction to FPGA Systems</a></td>
+    <td><a href="./Intro_GPU/intro_pytorch/intro_pytorch.ipynb">Introduction to PyTorch</a></td>
+    <td><a href="https://github.com/kaddu341">Awwab</a></td>
+  </tr>
+  <tr>
+    <td><a href="./Intro_GPU/Intro_CuPy/">Introduction to RAPIDS</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Dev_Prog/Hard_Acc_Sys/">Hardware Accelerated Systems</a></td>
+    <td rowspan="1"><a href="./Intro_FPGA/">Introduction to FPGA Systems</a></td>
+    <td><a href="./IntroFPGA/Intro_FPGA/">Introduction to FPGA</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
@@ -65,32 +82,36 @@ Repository hosting a series of educational workshops at the University of Florid
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="./Intro_Time_Series/">Introduction to Time Series</a></td>
-    <td><a href="./Intro_Time_series/Intro_TSML/">Introduction to Time Series ML</a></td>
+    <td rowspan="3"><a href="./Intro_Time_Series/">Introduction to Time Series</a></td>
+    <td><a href="./Intro_Time_Series/Intro_AdFilt_APA/">Introduction to Adaptive Filtering (APA)</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Time_series/Intro_RTDSP/">Introduction to Real-Time DSP</a></td>
+    <td><a href="./Intro_Time_Series/Intro_AdFilt_KF/">Introduction to Adaptive Filtering (Kalman)</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+    <tr>
+    <td><a href="./Intro_Time_Series/Intro_RNN/">Introduction to Recurrent Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="./Intro_Mach_Learn/">Introduction to Machine Learning</a></td>
-    <td><a href="./Intro_Mach_Learn/Intro_ML/">Introduction to Machine Learning</a></td>
+    <td rowspan="4"><a href="./Intro_Mach_Learn/">Introduction to Machine Learning</a></td>
+    <td><a href="./Intro_Mach_Learn/Intro_ANN/">Introduction to Artifical Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td><a href="./Intro_Mach_Learn/Intro_DL/">Introduction to Deep Learning</a></td>
+    <td><a href="./Intro_Mach_Learn/Intro_CNN/">Introduction to Convolutional Neural Networks</a></td>
+    <td><a href="https://github.com/Jibby2k1">Raul</a></td>
+  </tr>
+    <tr>
+    <td><a href="./Intro_Mach_Learn/Scale_NN/">Scaling Neural Networks</a></td>
     <td><a href="https://github.com/Jibby2k1">Raul</a></td>
   </tr>
   <tr>
-    <td rowspan="2"><a href="./Intro_DL_4_Physics/">Introduction to Physics Infromed Machine Learning</a></td>
-    <td><a href="./Intro_DL_4_Physics/intro_pytorch/intro_pytorch.ipynb">Introduction to PyTorch</a></td>
+    <td><a href="./Intro_Mach_Learn/intro_transformers/Intro_transformers.ipynb">Introduction to Transformers</a></td>
     <td><a href="https://github.com/kaddu341">Awwab</a></td>
   </tr>
-  <tr>
-    <td><a href="./Intro_DL_4_Physics/intro_transformers/Intro_transformers.ipynb">Introduction to Transformers</a></td>
-    <td><a href="https://github.com/kaddu341">Awwab</a></td>
-  </tr>
+
 </table>
 
 ## How to Contribute

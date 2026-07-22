@@ -44,3 +44,88 @@ Material: [`Filter_Design.ipynb`](./Filter_Design.ipynb) — the application-foc
 | **S1 — FIR Filters** | Application | §2: windowed-sinc design, windows, linear phase | Design an FIR low-pass with `firwin`; read magnitude/phase; know why linear phase matters. |
 | **S2 — IIR Filters** | Application | §3: Butterworth/Chebyshev/elliptic, poles & zeros | Choose between FIR/IIR; verify stability from pole locations (ties back to Laplace, W1·S2). |
 | **S3 — Filters in Practice** | Application | §4: notch + low-pass on an ECG-like signal, `filtfilt`, SOS form | Clean a contaminated signal end-to-end; avoid the classic implementation pitfalls. |
+
+---
+
+## Workshop 3 — Foundations of Signal Processing 2 *(available)*
+
+Material: [`Foundations_of_Signal_Processing_2.ipynb`](./Foundations_of_Signal_Processing_2.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — The z-Transform & ROC** | Theory | ROC geometry, stability vs causality, inversion by residues. |
+| **S2 — Multirate** | Application | Decimation/interpolation done honestly; aliasing & images demonstrated. |
+| **S3 — Polyphase Structures** | Theory → Application | Never compute what you'll discard; equivalence verified to 1e-15. |
+| **S4 — Wavelets, a First Meeting** | Application | Haar from scratch; blocks-signal compression bake-off vs Fourier. |
+
+## Workshop 4 — Statistical Signal Processing *(available)*
+
+Material: [`Statistical_Signal_Processing.ipynb`](./Statistical_Signal_Processing.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Random Processes & Stationarity** | Theory | WSS, autocorrelation, ergodicity. |
+| **S2 — The PSD** | Theory → Application | Wiener–Khinchin; why the periodogram lies and Welch converges. |
+| **S3 — The Wiener Filter, Derived** | Theory → Application | Wiener–Hopf, orthogonality; a working PSD-only denoiser. |
+| **S4 — Matched Filters & Detection** | Application | Neyman–Pearson, ROC curves; matched filter dominates measured. |
+
+## Workshop 5 — Array Processing & Beamforming *(available)*
+
+Material: [`Array_Processing.ipynb`](./Array_Processing.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — The Array Manifold** | Theory | Direction as spatial frequency; grating lobes as spatial aliasing. |
+| **S2 — Delay-and-Sum & MVDR** | Application | MVDR digs an interferer null by itself (+11 dB SINR measured). |
+| **S3 — Subspace Methods: MUSIC** | Theory → Application | Eigen-subspaces resolve sources 8° apart. |
+
+## Workshop 6 — Audio & Speech DSP *(available)*
+
+Material: [`Audio_Speech_DSP.ipynb`](./Audio_Speech_DSP.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Reading Spectrograms** | Application | Sight-read tones, harmonics, percussion, chirps. |
+| **S2 — Speech: Source-Filter** | Theory → Application | Synthesize vowels; estimate pitch & formants (LPC) back. |
+| **S3 — Effects Are Filters** | Application | Reverb, robot voice, pitch shift as DSP primitives. |
+
+## Workshop 7 — Image Processing as 2-D DSP *(available)*
+
+Material: [`Image_Processing.ipynb`](./Image_Processing.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — 2-D Convolution & Spectra** | Theory → Application | Plane waves, reading 2-D spectra. |
+| **S2 — Sampling, Aliasing & Moiré** | Application | Zone-plate moiré; anti-alias before subsampling. |
+| **S3 — Edges → Learned Features** | Application | Sobel, unsharp masking, the straight line to CNNs. |
+
+## Workshop 8 — Compressed Sensing *(available)*
+
+Material: [`Compressed_Sensing.ipynb`](./Compressed_Sensing.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Why Undersampling Can Work** | Theory | Sparsity + incoherence + the L1 diamond geometry. |
+| **S2 — Reconstruction Lab** | Application | ISTA from scratch: exact support recovery from 15% of samples (25.8 dB vs L2's 0.8 dB). |
+
+## Workshop 9 — Digital Communications *(available)*
+
+Material: [`Digital_Communications.ipynb`](./Digital_Communications.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Modulation** | Theory → Application | Constellations; the energy/rate trade at fixed SNR. |
+| **S2 — Pulse Shaping & Eye Diagrams** | Application | RRC link, matched filter, reading the eye. |
+| **S3 — Synchronization** | Application | One preamble correlation finds frame AND phase (0 errors after sync). |
+| **S4 — OFDM in 40 Minutes** | Application | IFFT modem + cyclic prefix: equalization becomes division. |
+
+## Workshop 10 — Real-Time Signal Processing *(available)*
+
+Material: [`Real_Time_DSP.ipynb`](./Real_Time_DSP.ipynb) — the workshop Intro_GPU promised.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Fixed-Point Arithmetic** | Theory → Application | Q-format, 6 dB/bit measured, the overflow trap demonstrated. |
+| **S2 — Latency Budgets** | Application | Latency ≥ one block; compute < one block-duration; measured deadlines. |
+| **S3 — A Real-Time Pipeline** | Application | Threaded producer/consumer with headroom histograms and miss counts. |
+

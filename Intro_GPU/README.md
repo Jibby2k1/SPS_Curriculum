@@ -34,3 +34,24 @@ Material: [`Intro_RAPIDS.ipynb`](./Intro_RAPIDS.ipynb) — requires an NVIDIA GP
 |---|---|---|---|
 | **S1 — cuDF** | Application | §2: pandas → cuDF port, the honest end-to-end benchmark, the crossover | Charge the transfer; find where the GPU actually wins. |
 | **S2 — cuML** | Application | §3: KMeans bake-off, the three-condition decision rule | Know when RAPIDS earns its keep vs sklearn ([ML](../Intro_Mach_Learn/README.md)). |
+
+## Workshop 3 — Hardware-Accelerated Scientific Computing *(draft — pending review)*
+
+Material: [`HW_Accelerated_Computing.ipynb`](./HW_Accelerated_Computing.ipynb) — the promised sequel; requires an NVIDIA GPU; carries a review banner.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Warps, Divergence & Occupancy** | Theory → Application | The 32-thread lockstep unit; aligned vs splitting branches, timed. |
+| **S2 — Shared Memory & Tiling** | Application | Tiled matmul: buy CGMA with the on-chip workbench. |
+| **S3 — Streams & Overlap** | Application | Pinned memory + streams: hide transfers behind compute. |
+
+## Workshop 4 — CUDA in C++ *(draft — pending review)*
+
+Material: [`CUDA_Cpp.ipynb`](./CUDA_Cpp.ipynb) — needs `nvcc`; carries a review banner.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — First Kernels** | Application | Full lifecycle with CUDA_CHECK discipline. |
+| **S2 — Memory Patterns** | Application | Unified vs explicit vs pinned; bandwidth measured with events. |
+| **S3 — The Library Ecosystem** | Application | cuBLAS (column-major!), cuFFT; the your-kernel-vs-library ladder. |
+

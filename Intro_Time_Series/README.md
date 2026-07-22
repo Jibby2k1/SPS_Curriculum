@@ -36,6 +36,34 @@ Material: [`Intro_RNN.ipynb`](./Intro_RNN.ipynb)
 | **S1 — RNNs as Learned State-Space Models** | Theory | §2: recurrence, BPTT, vanishing/exploding gradients (demo), LSTM gating | Connect RNN ↔ Kalman; see *why* plain RNNs forget and how gates fix it. |
 | **S2 — Sequence Prediction in Practice** | Application | §3: LSTM forecaster vs persistence & linear AR baselines | Train honestly, clip gradients, and respect the linear baseline. Builds on [Intro to PyTorch](../Intro_DL_4_Physics/README.md). |
 
+## Workshop 4 — RLS & Recursive Estimation *(available)*
+
+Material: [`Intro_RLS.ipynb`](./Intro_RLS.ipynb) — the rung between APA and Kalman.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Exponentially-Weighted LS** | Theory → Application | Matrix inversion lemma → O(M²) exact recursion; near-immune to colored input. |
+| **S2 — RLS ↔ Kalman** | Theory | The identification verified to machine precision; the family cost/robustness table. |
+
+## Workshop 5 — Beyond Kalman *(available)*
+
+Material: [`Beyond_Kalman.ipynb`](./Beyond_Kalman.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — The EKF** | Application | Track a large-swing pendulum from sin(θ) alone. |
+| **S2 — The UKF** | Theory → Application | Sigma points beat the tangent line on the banana problem. |
+| **S3 — Particle Filters** | Application | Honestly bimodal belief in a corridor; resampling and its costs. |
+
+## Workshop 6 — Classical Forecasting *(available)*
+
+Material: [`Classical_Forecasting.ipynb`](./Classical_Forecasting.ipynb)
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — AR & MA Fingerprints** | Theory → Application | ACF/PACF identification; Yule-Walker recovers [1.1, −0.5] exactly. |
+| **S2 — ARIMA & Honest Forecasts** | Application | Difference, fit, forecast with a widening 95% cone. |
+
 **Where next:** attention-based sequence models in
 [Deep Learning for Physics → Transformers](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).
 

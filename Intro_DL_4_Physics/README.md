@@ -31,6 +31,15 @@ Material: [`intro_transformers/intro_transformers.ipynb`](./intro_transformers/i
 | **S1 — Attention & Data** | Theory → Application | §0–1: setup, data generation | Understand the attention mechanism; generate the training dataset. |
 | **S2 — Build & Train a Transformer** | Application | §2–3 + testing | Assemble a transformer from PyTorch primitives; train and evaluate it. |
 
+## Workshop 3 — Physics-Informed Neural Networks *(available)*
+
+Material: [`PINNs.ipynb`](./PINNs.ipynb) — arguably this track's flagship.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — The PDE-as-Loss Idea** | Theory → Application | Autograd w.r.t. inputs; solve an ODE with zero data (max err 6e-3). |
+| **S2 — The Oscillator from 6 Points** | Application | Physics as a prior: RMSE 0.68 (plain) → 0.03 (PINN). |
+
 **Where next:** sequence models from a signals perspective in
 [Time Series → RNNs](../Intro_Time_Series/README.md); scaling questions in
 [ML → Scaling Neural Networks](../Intro_Mach_Learn/README.md).

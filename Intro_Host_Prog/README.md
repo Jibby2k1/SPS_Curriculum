@@ -29,4 +29,22 @@ Material: [`Intro_Databases/Intro_Databases.ipynb`](./Intro_Databases/Intro_Data
 | **S2 — Joins, Aggregation & Transactions** | Application | §3–§4: JOIN, GROUP BY, atomicity | Reassemble entities; summarize per-sensor; make multi-step changes all-or-nothing. |
 | **S3 — Databases from Python** | Application | §5: parameterized queries, an experiment logger, beyond SQLite | Query safely (no injection); log training runs; know when to reach for Postgres/DuckDB. |
 
+## Workshop 3 — Git & Collaboration *(available)*
+
+Material: [`Intro_Git/Intro_Git.ipynb`](./Intro_Git/Intro_Git.ipynb) — builds its own sandbox repo; every cell runs.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Commits, Branches & Merges** | Application | The snapshot DAG; cause and resolve a real conflict. |
+| **S2 — The Collaboration Loop** | Application | Fork → branch → PR → review, plus the five rescue commands. |
+
+## Workshop 4 — Containers & Reproducibility *(draft — pending review)*
+
+Material: [`Intro_Containers/Intro_Containers.ipynb`](./Intro_Containers/Intro_Containers.ipynb) — needs Docker; carries a review banner.
+
+| Session | Focus | Objectives |
+|---|---|---|
+| **S1 — Environments, Pinned** | Application | requirements → lockfiles: declare intent, lock reality. |
+| **S2 — Docker** | Application | Containerize a workshop; layer-cache discipline; volumes for data. |
+
 Contributions welcome — see the [contribution guide](../README.md#contributing).

@@ -4,7 +4,7 @@ Application track: pushing signal processing into hardware. Where
 [GPU workshops](../Intro_GPU/README.md) parallelize software, FPGAs let you *build the
 datapath itself*.
 
-**Prerequisites:** [Intro to C](../Intro_Func_Prog/Intro_C.ipynb);
+**Prerequisites:** [Intro to C](../Intro_Programming/Intro_C.ipynb);
 [DSP Workshop 1](../Intro_DSP/README.md) for the filtering sessions.
 
 ---

@@ -1,10 +1,11 @@
 # Deep Learning for Physics
 
-Application track: build and train neural networks in PyTorch on physics-flavored data.
+Application track — **the curriculum's applied-DL home**: build and train neural networks in
+PyTorch on physics-flavored data (theory lives in [Intro to ML](../Intro_Mach_Learn/README.md)).
 Each workshop ships a completed instructor notebook plus fill-in-the-blank student
 versions (`*_blank_*.ipynb`) used in live sessions.
 
-**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available).
+**Prerequisites:** [Intro to Python](../Intro_Programming/README.md#workshop-2--introduction-to-python-available).
 [Intro to GPU Systems](../Intro_GPU/README.md) explains the hardware these models train on;
 [Intro to ML](../Intro_Mach_Learn/README.md) covers the underlying theory.
 

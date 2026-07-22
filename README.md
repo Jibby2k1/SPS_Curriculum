@@ -34,9 +34,9 @@ flowchart LR
 | | [Measure Theory](./Intro_Math/Analysis/Measure_Theory.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | | [Random Variables](./Intro_Math/Analysis/Random_Variables.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | | [Independence](./Intro_Math/Analysis/Independence.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
-| [**Programming**](./Intro_Func_Prog/README.md) | [Introduction to C](./Intro_Func_Prog/Intro_C.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
-| | [Introduction to Python](./Intro_Func_Prog/Intro_Python/Intro_Python.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
-| | [Introduction to MATLAB](./Intro_Func_Prog/Intro_MATLAB/Intro_MATLAB.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| [**Programming**](./Intro_Programming/README.md) | [Introduction to C](./Intro_Programming/Intro_C.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Introduction to Python](./Intro_Programming/Intro_Python/Intro_Python.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Introduction to MATLAB](./Intro_Programming/Intro_MATLAB/Intro_MATLAB.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | [**Host Programming**](./Intro_Host_Prog/README.md) | [Operating Systems](./Intro_Host_Prog/Intro_OS/Intro_OS.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Databases](./Intro_Host_Prog/Intro_Databases/Intro_Databases.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**DSP**](./Intro_DSP/README.md) | [Foundations of Signal Processing](./Intro_DSP/Foundations_of_Signal_Processing_1.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |

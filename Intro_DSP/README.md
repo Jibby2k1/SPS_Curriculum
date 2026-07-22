@@ -6,7 +6,7 @@ application-focused series on filter design.
 **Prerequisites:** comfort with calculus and complex numbers.
 [Real Number Systems](../Intro_Math/Analysis/Real_Number_Systems.ipynb) and
 [Basic Topology](../Intro_Math/Analysis/Basic_Topology.ipynb) are helpful but not required.
-For the programming side, see [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available).
+For the programming side, see [Intro to Python](../Intro_Programming/README.md#workshop-2--introduction-to-python-available).
 
 ---
 
@@ -14,17 +14,19 @@ For the programming side, see [Intro to Python](../Intro_Func_Prog/README.md#wor
 
 Material: [`Foundations_of_Signal_Processing_1.ipynb`](./Foundations_of_Signal_Processing_1.ipynb)
 
-The notebook is partitioned into six 30–40 minute sessions. Each session lists the
-notebook sections it covers.
+The notebook is partitioned into eight 30–40 minute sessions (re-cut from six so each
+records as one video — see [RECORDING.md](../RECORDING.md)).
 
 | Session | Focus | Notebook sections | Objectives |
 |---|---|---|---|
-| **S1 — Why transforms?** | Theory | §0 Introduction, §1 Pre-requisites (Euler's $e$), §2.0 ($L_1 \subseteq L_2$, Hölder) | Motivate frequency-domain thinking; establish the function spaces we work in. |
-| **S2 — The Laplace Transform** | Theory | §2.1 (history, DT & CT Laplace) | Define the Laplace transform in discrete and continuous time; see it as the parent of everything that follows. |
-| **S3 — The Fourier Family** | Theory | §2.2.0–2.2.3 (DTFT, CTFT, DFT) | Derive the Fourier transforms as special cases of Laplace; relate the four transform flavors. |
-| **S4 — Sampling & Uncertainty** | Theory | §2.2.4 Sampling Theorem, §2.3 Uncertainty Principle & STFT | State and interpret Nyquist–Shannon; understand time–frequency resolution trade-offs. |
-| **S5 — The FFT** | Theory → Application | §2.4.1–2.4.2 (Radix-2 DIT & DIF) | Derive the butterfly; count operations; implement a radix-2 FFT. |
-| **S6 — Fast Convolution** | Application | §2.4.3 (Overlap-Add, Overlap-Save) | Filter long/streaming signals with block convolution; benchmark against direct convolution. |
+| **S1 — Why Transforms?** | Theory | §0 Introduction, §1 Pre-requisites (Euler's $e$) | Motivate frequency-domain thinking. |
+| **S2 — Function Spaces** | Theory | §2.0 ($\ell_1 \subseteq \ell_2$, Hölder) | Establish the spaces signals live in. |
+| **S3 — The Laplace Transform** | Theory | §2.1 (history, DT & CT Laplace) | The parent transform, in both time flavors. |
+| **S4 — The DTFT & CTFT** | Theory | §2.2.0–2.2.2 | Fourier as Laplace on the circle/axis. |
+| **S5 — The DFT & Sampling** | Theory | §2.2.3–2.2.4 | The computable transform; Nyquist–Shannon. |
+| **S6 — Uncertainty & the STFT** | Theory | §2.3 | Time–frequency trade-offs; the spectrogram. |
+| **S7 — The FFT** | Theory → Application | §2.4.1–2.4.2 (Radix-2 DIT & DIF) | Derive the butterfly; count operations. |
+| **S8 — Fast Convolution** | Application | §2.4.3 (Overlap-Add, Overlap-Save) | Block convolution for long/streaming signals. |
 
 **Where next:** apply these transforms in
 [Filter Design](#workshop-2--filter-design-available) (application),

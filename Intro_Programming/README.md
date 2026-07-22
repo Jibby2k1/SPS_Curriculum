@@ -1,5 +1,7 @@
 # Introduction to Programming
 
+> Directory renamed from `Intro_Func_Prog` (2026-07): the content is procedural/imperative programming, and the old name was a misnomer.
+
 Application track: the languages used throughout the curriculum. Start with Python if
 you're new to programming; take C before the
 [GPU](../Intro_GPU/README.md) and [FPGA](../Intro_FPGA/README.md) series.
@@ -17,9 +19,16 @@ Partitioned into six 30–40 minute sessions:
 | **S1 — Setup, Syntax & Control** | Application | §1 Pre-requisites, §2 Syntax and Structure | Install GCC, compile & run; use types, operators, and control structures. |
 | **S2 — Functions & Scope** | Application | §3 Functions | Write and declare functions; understand scope, lifetime, static variables, recursion. |
 | **S3 — Memory & Pointers** | Theory → Application | §4 Arrays & Structures, §5 Pointers | Model memory as an address space; use `malloc`/`realloc`/`free` correctly. |
-| **S4 — Linked Structures** | Application | §6.1 Linked Lists, Stacks, Queues | Implement singly/doubly linked lists and static/dynamic stacks & queues. |
-| **S5 — Trees & Heaps** | Theory → Application | §6.2 Trees (BST, Max/Min Heap) | Implement a BST and a heap; reason about their invariants and complexity. |
-| **S6 — Files & the Command Line** | Application | §7 Files, §8 Command Line | Read/write files; build a small CLI program with `argc`/`argv`. |
+| **S4 — Files & the Command Line** | Application | §7 Files, §8 Command Line | Read/write files; build a small CLI program with `argc`/`argv`. |
+
+## Workshop 1b — Data Structures in C *(available)*
+
+Material: [`Data_Structures_in_C.ipynb`](./Data_Structures_in_C.ipynb) — split from Intro to C so each session records as one video.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Linked Structures** | Application | §6.1 Linked Lists, Stacks, Queues | Implement singly/doubly linked lists and static/dynamic stacks & queues. |
+| **S2 — Trees & Heaps** | Theory → Application | §6.2 Trees (BST, Max/Min Heap) | Implement a BST and a heap; reason about their invariants and complexity. |
 
 **Where next:** C-level memory reasoning carries into
 [GPU kernels](../Intro_GPU/README.md) and

@@ -4,7 +4,7 @@ Theory-and-practice track on learning from data: from single neurons to scaling 
 The transformer workshop already exists in
 [Deep Learning for Physics](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).
 
-**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available);
+**Prerequisites:** [Intro to Python](../Intro_Programming/README.md#workshop-2--introduction-to-python-available);
 [Random Variables & Independence](../Intro_Math/Analysis/README.md) for the probability
 underpinnings.
 
@@ -38,7 +38,11 @@ Material: [`Scale_NN/Scale_NN.ipynb`](./Scale_NN/Scale_NN.ipynb) — all benchma
 | **S1 — Why Scale? Accounting & Scaling Laws** | Theory → Application | §2–§3: param/FLOP counting, a laptop-scale scaling study | Count before optimizing; watch loss power-law onto the noise floor. |
 | **S2 — Making Training Fast** | Application | §4–§7: throughput-vs-batch knee, profiler, gradient accumulation (proved exact), GPU toolbox map | Find the binding constraint; spend the cheap resource ([GPU systems](../Intro_GPU/README.md)). |
 
-## Workshop 4 — Transformers *(available, hosted in DL for Physics)*
+## Workshop 4 — Transformers *(available — hosted in DL for Physics by design)*
+
+[Deep Learning for Physics](../Intro_DL_4_Physics/README.md) is the curriculum's applied-DL
+home: hands-on PyTorch workshops with student blank versions. This ML track owns the *theory*
+(ANN → CNN → Scaling); the applied transformer sessions live there on purpose.
 
 See [`Intro_DL_4_Physics/intro_transformers`](../Intro_DL_4_Physics/intro_transformers/intro_transformers.ipynb)
 and its [session breakdown](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).

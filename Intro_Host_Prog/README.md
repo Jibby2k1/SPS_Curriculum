@@ -3,7 +3,7 @@
 Application track: the systems software that surrounds your signal chain — the OS your
 code runs on and the databases your data lands in.
 
-**Prerequisites:** [Intro to C](../Intro_Func_Prog/Intro_C.ipynb) (memory model, files,
+**Prerequisites:** [Intro to C](../Intro_Programming/Intro_C.ipynb) (memory model, files,
 command line).
 
 ---

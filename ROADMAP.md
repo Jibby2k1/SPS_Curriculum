@@ -53,3 +53,13 @@ for the live view). Sizing rule everywhere: **one session = 30–40 minutes = on
 5. ✅ [RECORDING.md](./RECORDING.md) house format
 6. ✅ `_blank_fall26` versions generated for 10 flagship workshops (rolling per term)
 7. ✅ [START_HERE.md](./START_HERE.md) learning paths
+
+## Ring 2 *(landed 2026-07-22)*
+
+All 32 Ring-2 courses generated; ✅ = executed with independent-oracle checks, 📝 = draft with in-notebook banner.
+
+**Flagships:** ✅ SSMs Kalman→S4→Mamba · ✅ Reinforcement Learning · ✅ Graph SP & GNNs · ✅ Online Learning & Regret · ✅ Channel Coding
+**Math:** ✅ Numerical Linear Algebra · 📝 Concentration · 📝 Stochastic Processes II · ✅ Convex Opt II · ✅ Random Matrix Theory · ✅ Manifold Opt
+**DSP:** ✅ Sparse/K-SVD · ✅ ICA · ✅ Time-Frequency II · ✅ Cyclostationary+HOS · ✅ Radar · ✅ MIMO · ✅ Sigma-Delta
+**ML:** ✅ Optimal Transport · ✅ Diffusion II (score/SDE) · ✅ Causal Inference · ✅ Modern Architectures · ✅ VI & Flows · ✅ MechInterp · ✅ Federated+DP · 📝 TinyML
+**Systems:** ✅ Performance/Roofline · ✅ Distributed Training II (live gloo) · 📝 Triton · 📝 HLS · ✅ Quantum for Signal Processors · ✅ **Capstone: Build a Full System**

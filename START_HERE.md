@@ -68,5 +68,8 @@ flowchart TD
 order (Real Numbers → Topology → Sequences → Measure → Random Variables → Independence),
 with [Linear Algebra](./Intro_Math/README.md) in parallel.
 
+**"I want to put it all together"** — the [Capstone](./Capstone/Full_System_Capstone.ipynb):
+detection → tracking → classification → database, every stage a workshop you've taken.
+
 Full inventory: the [README table](./README.md#workshops). What's coming:
 [ROADMAP.md](./ROADMAP.md).

@@ -116,4 +116,100 @@ Material: [`Uncertainty_in_ML.ipynb`](./Uncertainty_in_ML.ipynb)
 | **S1 — Calibration** | Application | Reliability diagrams, ECE, temperature scaling. |
 | **S2 — Ensembles & OOD** | Application | Bootstrap ensembles flag some off-map regions — with honest area numbers on what still fools everything. |
 
+
+---
+
+# Ring 2 Workshops *(2026)*
+
+## Workshop 12 — Reinforcement Learning *(available)*
+
+Material: [`Reinforcement_Learning.ipynb`](./Reinforcement_Learning.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Bandits** | Regret curves: greedy plateaus, ε pays tax, UCB's shrinks. |
+| **S2 — MDPs & Bellman** | Value iteration = the exact oracle (γ-contraction shown). |
+| **S3 — TD & Q-Learning** | Robbins–Monro schedule → 100% optimal actions vs the DP oracle. |
+| **S4 — Policy Gradients** | REINFORCE ± baseline, reaching the oracle's value. |
+| **S5 — The Road to RLHF** | Policy/reward-model/KL-anchor vocabulary for the LLM workshop. |
+
+## Workshop 13 — Optimal Transport *(available)*
+
+Material: [`Optimal_Transport.ipynb`](./Optimal_Transport.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Monge/Kantorovich & KL's blindness** | W1 slope exactly 1 where KL saturates. |
+| **S2 — Sinkhorn** | Verified against Hungarian AND an LP to ~1e-3. |
+| **S3 — OT in ML** | Barycenters, domain adaptation 49%→73%, the flow-matching pointer. |
+
+## Workshop 14 — Diffusion II: Score & SDEs *(available)*
+
+Material: [`Diffusion_Score_SDE.ipynb`](./Diffusion_Score_SDE.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — The Score** | Denoising == score estimation; cosine 0.999 vs the CLOSED-FORM mixture score. |
+| **S2 — Langevin & the Forward SDE** | OU variance audited against Itô. |
+| **S3 — The Reverse SDE** | Anderson's time machine; mode weights 0.35/0.33/0.32 vs 1/3. |
+
+## Workshop 15 — Causal Inference *(available)*
+
+Material: [`Causal_Inference.ipynb`](./Causal_Inference.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Seeing vs Doing** | Naive slope 5.4 vs interventional truth 2.0 — measured by actually intervening. |
+| **S2 — Backdoors & Colliders** | Adjustment recovers 2.014; collider bias manufactured on demand (−0.80 from independence). |
+| **S3 — Modern Estimators** | Standardization/IPW/DR all within 0.012 of the oracle ATE. |
+
+## Workshop 16 — Modern Architectures *(available)*
+
+Material: [`Modern_Architectures.ipynb`](./Modern_Architectures.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Attention's Cost Curve** | Quadratic wall measured; window/linear repairs near-linear. |
+| **S2 — Mixture of Experts** | Routing collapse demonstrated, then cured (balanced 25% each, better MSE). |
+| **S3 — The Assembled Zoo** | The design-space table modern papers walk through. |
+
+## Workshop 17 — Variational Inference & Flows *(available)*
+
+Material: [`Variational_Inference_Flows.ipynb`](./Variational_Inference_Flows.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — The ELBO, Derived** | Gap → 0.001 against a conjugate closed-form posterior. |
+| **S2 — Normalizing Flows** | Coupling flow on two moons: exact NLL, ∫p = 1.000. |
+| **S3 — The Generative Trade-Space** | VAE/flow/diffusion/GAN: what each drops. |
+
+## Workshop 18 — Mechanistic Interpretability *(available)*
+
+Material: [`Mechanistic_Interpretability.ipynb`](./Mechanistic_Interpretability.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Probes** | Running-depth R² rising through the blocks of a paren-balance transformer. |
+| **S2 — Activation Patching** | Full-layer patches transfer the verdict at +1.00; the circuit mapped. |
+
+## Workshop 19 — Federated Learning & Privacy *(available)*
+
+Material: [`Federated_Learning_Privacy.ipynb`](./Federated_Learning_Privacy.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — FedAvg & Non-IID** | Client drift measured; communication as the antidote. |
+| **S2 — Differential Privacy, by Attack** | Alice reconstructed to the cent at ε=∞; useless at ε=1 — with the utility bill. |
+
+## Workshop 20 — TinyML *(draft — pending review)*
+
+Material: [`TinyML.ipynb`](./TinyML.ipynb) — needs a microcontroller; carries a review banner
+
+| Session | Objectives |
+|---|---|
+| **S1 — The Budget & the Model** | Design backwards from 264 KB of RAM. |
+| **S2 — Inference in Plain C** | int8 conv/dense loops; desktop bit-exactness oracle before flashing. |
+| **S3 — On the Board** | Latency/RAM/energy measured on a $6 Pico. |
+
+
 Contributions welcome — see the [contribution guide](../README.md#contributing).

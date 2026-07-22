@@ -23,6 +23,13 @@ flowchart LR
     GPU --> DL[🛠️ DL for Physics<br>PyTorch · Transformers · PINNs]
     ML --> DL
     TS --> DL
+    Math --> RMT[📐 Ring 2 math<br>NLA · RMT · Martingales · OT]
+    ML --> Frontier[📐+🛠️ ML frontier<br>RL · Diffusion II · Causal<br>MechInterp · Architectures]
+    DSP --> R2DSP[📐+🛠️ Ring 2 DSP<br>Graphs · Coding · Radar · MIMO<br>ICA · Sparse · Cyclo]
+    GPU --> Sys2[🛠️ Systems II<br>Roofline · Distributed · Triton]
+    R2DSP --> Cap[🏁 Capstone<br>full pipeline]
+    Frontier --> Cap
+    Sys2 --> Cap
 ```
 
 Start with [**START_HERE.md**](./START_HERE.md) for guided learning paths; see the
@@ -45,6 +52,12 @@ video format.
 | | [Hilbert Spaces & Fourier](./Intro_Math/Hilbert_Spaces/Hilbert_Spaces.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | | [Information Theory](./Intro_Math/Information_Theory/Information_Theory.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Complex Analysis Lite](./Intro_Math/Complex_Analysis/Complex_Analysis_Lite.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| | [Numerical Linear Algebra](./Intro_Math/Numerical_Linear_Algebra/Numerical_Linear_Algebra.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Concentration & Learning Theory](./Intro_Math/Concentration/Concentration_Inequalities.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| | [Stochastic Processes II](./Intro_Math/Stochastic_Processes/Stochastic_Processes_2.ipynb) | 📐 Theory | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| | [Convex Optimization II](./Intro_Math/Optimization/Convex_Optimization_2.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Random Matrix Theory](./Intro_Math/Random_Matrix_Theory/Random_Matrix_Theory.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Manifold Optimization](./Intro_Math/Optimization/Manifold_Optimization.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**Programming**](./Intro_Programming/README.md) | [Introduction to C](./Intro_Programming/Intro_C.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Data Structures in C](./Intro_Programming/Data_Structures_in_C.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Introduction to Python](./Intro_Programming/Intro_Python/Intro_Python.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
@@ -63,17 +76,32 @@ video format.
 | | [Compressed Sensing](./Intro_DSP/Compressed_Sensing.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Digital Communications](./Intro_DSP/Digital_Communications.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Real-Time Signal Processing](./Intro_DSP/Real_Time_DSP.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Graph Signal Processing & GNNs](./Intro_DSP/Graph_Signal_Processing.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Channel Coding](./Intro_DSP/Channel_Coding.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Sparse Coding & Dictionary Learning](./Intro_DSP/Sparse_Dictionary_Learning.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Blind Source Separation & ICA](./Intro_DSP/ICA_Blind_Source_Separation.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Time–Frequency II](./Intro_DSP/Time_Frequency_2.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Cyclostationarity & HOS](./Intro_DSP/Cyclostationary_HOS.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Radar Signal Processing](./Intro_DSP/Radar_Signal_Processing.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [MIMO Communications](./Intro_DSP/MIMO_Communications.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Sigma-Delta & Quantization](./Intro_DSP/Sigma_Delta_Quantization.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**GPU Systems**](./Intro_GPU/README.md) | [GPU-Accelerated Computing (Numba & CuPy)](./Intro_GPU/Intro_GPU.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [RAPIDS](./Intro_GPU/Intro_RAPIDS.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | | [Hardware-Accelerated Computing](./Intro_GPU/HW_Accelerated_Computing.ipynb) | 📐+🛠️ | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | | [CUDA in C++](./Intro_GPU/CUDA_Cpp.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| | [Performance Engineering & Roofline](./Intro_GPU/Performance_Engineering.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Distributed Training II](./Intro_GPU/Distributed_Training_2.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Triton: GPU Kernels in Python](./Intro_GPU/Triton_Kernels.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | [**FPGA Systems**](./Intro_FPGA/README.md) | [Introduction to FPGA](./Intro_FPGA/Intro_FPGA.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| | [HLS for FPGA: C to Gates](./Intro_FPGA/HLS_for_FPGA.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | [**Time Series**](./Intro_Time_Series/README.md) | [Adaptive Filtering (APA)](./Intro_Time_Series/Intro_AdFilt_APA.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Adaptive Filtering (Kalman)](./Intro_Time_Series/Intro_AdFilt_KF.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Recurrent Neural Networks](./Intro_Time_Series/Intro_RNN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [RLS & Recursive Estimation](./Intro_Time_Series/Intro_RLS.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Beyond Kalman (EKF/UKF/Particle)](./Intro_Time_Series/Beyond_Kalman.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Classical Forecasting (ARIMA)](./Intro_Time_Series/Classical_Forecasting.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [State-Space Models: Kalman → S4 → Mamba](./Intro_Time_Series/State_Space_Models_Kalman_to_Mamba.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Online Learning & Regret](./Intro_Time_Series/Online_Learning_and_Regret.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**Machine Learning**](./Intro_Mach_Learn/README.md) | [Artificial Neural Networks](./Intro_Mach_Learn/Intro_ANN/Intro_ANN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Convolutional Neural Networks](./Intro_Mach_Learn/Intro_CNN/Intro_CNN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Scaling Neural Networks](./Intro_Mach_Learn/Scale_NN/Scale_NN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
@@ -84,10 +112,21 @@ video format.
 | | [Kernel Methods & RKHS](./Intro_Mach_Learn/Kernel_Methods.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Model Compression & Edge AI](./Intro_Mach_Learn/Model_Compression.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Uncertainty in ML](./Intro_Mach_Learn/Uncertainty_in_ML.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Reinforcement Learning](./Intro_Mach_Learn/Reinforcement_Learning.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Optimal Transport](./Intro_Mach_Learn/Optimal_Transport.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Diffusion II: Score & SDEs](./Intro_Mach_Learn/Diffusion_Score_SDE.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Causal Inference](./Intro_Mach_Learn/Causal_Inference.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Modern Architectures](./Intro_Mach_Learn/Modern_Architectures.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Variational Inference & Flows](./Intro_Mach_Learn/Variational_Inference_Flows.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Mechanistic Interpretability](./Intro_Mach_Learn/Mechanistic_Interpretability.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Federated Learning & Privacy](./Intro_Mach_Learn/Federated_Learning_Privacy.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [TinyML](./Intro_Mach_Learn/TinyML.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
 | [**DL for Physics**](./Intro_DL_4_Physics/README.md) | [Introduction to PyTorch](./Intro_DL_4_Physics/intro_pytorch/intro_pytorch.ipynb) | 🛠️ Application | ✅ Available | [Awwab](https://github.com/kaddu341) |
 | | [Introduction to Transformers](./Intro_DL_4_Physics/intro_transformers/intro_transformers.ipynb) | 🛠️ Application | ✅ Available | [Awwab](https://github.com/kaddu341) |
 | | [Physics-Informed Neural Networks](./Intro_DL_4_Physics/PINNs.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**SDR**](./Intro_SDR/README.md) | [Software-Defined Radio](./Intro_SDR/Software_Defined_Radio.ipynb) | 🛠️ Application | 📝 Draft¹ | [Raul](https://github.com/Jibby2k1) |
+| [**Quantum**](./Intro_Quantum/README.md) | [Quantum for Signal Processors](./Intro_Quantum/Quantum_for_Signal_Processors.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| [**Capstone**](./Capstone/README.md) | [Build a Full System](./Capstone/Full_System_Capstone.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 
 ¹ **📝 Draft** = complete but pending instructor verification (math proofs, or code needing MATLAB/FPGA/GPU hardware to run). Each draft carries a ⚠️ banner in the notebook; it is removed once an instructor signs off.
 

@@ -23,3 +23,14 @@ The theory backbone of the curriculum. Currently one track:
 [Signal Processing](../Intro_DSP/README.md),
 [Time Series](../Intro_Time_Series/README.md), and
 [Machine Learning](../Intro_Mach_Learn/README.md).
+
+## Ring 2 tracks *(2026)*
+
+| Track | Status | Description |
+|---|---|---|
+| [Numerical Linear Algebra](./Numerical_Linear_Algebra/Numerical_Linear_Algebra.ipynb) | ✅ 4 | Conditioning (Läuchli!), QR vs Gram-Schmidt, CG at √κ, randomized SVD — all against LAPACK oracles. |
+| [Concentration & Learning Theory](./Concentration/Concentration_Inequalities.ipynb) | 📝 4 | Chernoff → Hoeffding → McDiarmid → Rademacher; an honest generalization bound, computed. |
+| [Stochastic Processes II](./Stochastic_Processes/Stochastic_Processes_2.ipynb) | 📝 4 | Conditional expectation as projection, martingales (no free lunch, simulated), Markov mixing = \|λ₂\|, Brownian (dB)²=dt. |
+| [Convex Optimization II](./Optimization/Convex_Optimization_2.ipynb) | ✅ 3 | Certified duality gaps, prox/soft-threshold verified by brute force, ADMM == FISTA to 1e-14. |
+| [Random Matrix Theory](./Random_Matrix_Theory/Random_Matrix_Theory.ipynb) | ✅ 3 | Semicircle, Marchenko–Pastur (edges verified), the BBP detection threshold. |
+| [Manifold Optimization](./Optimization/Manifold_Optimization.ipynb) | ✅ 2 | Sphere/Stiefel descent converging to `eigh`'s answers natively. |

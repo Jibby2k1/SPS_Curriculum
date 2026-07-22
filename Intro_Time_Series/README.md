@@ -64,6 +64,28 @@ Material: [`Classical_Forecasting.ipynb`](./Classical_Forecasting.ipynb)
 | **S1 — AR & MA Fingerprints** | Theory → Application | ACF/PACF identification; Yule-Walker recovers [1.1, −0.5] exactly. |
 | **S2 — ARIMA & Honest Forecasts** | Application | Difference, fit, forecast with a widening 95% cone. |
 
+## Workshop 7 — State-Space Models: Kalman → S4 → Mamba *(available)*
+
+Material: [`State_Space_Models_Kalman_to_Mamba.ipynb`](./State_Space_Models_Kalman_to_Mamba.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — LTI SSMs Are Convolutions** | Recurrence == convolution at 2e-15; train-parallel/infer-recurrent. |
+| **S2 — HiPPO & Discretization** | Kernel span 47 → 399+ steps via decade-spread timescales. |
+| **S3 — Train a Diagonal SSM** | 93% recall over 400 steps where the LSTM sits at chance. |
+| **S4 — Selectivity & Mamba (frontier sketch)** | Input-dependent gates solve what no fixed kernel can — honestly scoped. |
+
+## Workshop 8 — Online Learning & Regret *(available)*
+
+Material: [`Online_Learning_and_Regret.ipynb`](./Online_Learning_and_Regret.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Hedge** | Beat hindsight's best expert against an adversary; bound verified. |
+| **S2 — OGD** | The three-line telescope proof; RG√T audited (and beaten, honestly, by adaptivity). |
+| **S3 — The Adaptive-Filtering Reunion** | LMS = OGD, symbol for symbol: the distribution-free guarantee it always had. |
+
+
 **Where next:** attention-based sequence models in
 [Deep Learning for Physics → Transformers](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).
 

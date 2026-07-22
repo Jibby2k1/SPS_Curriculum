@@ -55,3 +55,33 @@ Material: [`CUDA_Cpp.ipynb`](./CUDA_Cpp.ipynb) — needs `nvcc`; carries a revie
 | **S2 — Memory Patterns** | Application | Unified vs explicit vs pinned; bandwidth measured with events. |
 | **S3 — The Library Ecosystem** | Application | cuBLAS (column-major!), cuFFT; the your-kernel-vs-library ladder. |
 
+## Workshop 5 — Performance Engineering & Roofline *(available)*
+
+Material: [`Performance_Engineering.ipynb`](./Performance_Engineering.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Measuring Your Roofs** | Compute & bandwidth ceilings measured; the critical intensity. |
+| **S2 — Kernels on the Roofline** | saxpy/exp/matmuls placed; the mechanical diagnosis. |
+
+## Workshop 6 — Distributed Training II *(available)*
+
+Material: [`Distributed_Training_2.ipynb`](./Distributed_Training_2.ipynb) — runs on any multi-core CPU; same API as NCCL
+
+| Session | Objectives |
+|---|---|
+| **S1 — Collectives** | Live 4-process gloo all-reduce; ring bandwidth optimality. |
+| **S2 — Data Parallelism, Verified** | Sharded-averaged gradient == big-batch gradient at 9e-8. |
+| **S3 — ZeRO/FSDP Arithmetic** | The 16 → 2 bytes/param memory ladder. |
+
+## Workshop 7 — Triton: GPU Kernels in Python *(draft — pending review)*
+
+Material: [`Triton_Kernels.ipynb`](./Triton_Kernels.ipynb) — needs an NVIDIA GPU; carries a review banner
+
+| Session | Objectives |
+|---|---|
+| **S1 — The Block Model** | Tiles not threads; the masking idiom; torch-equality oracles. |
+| **S2 — Fused Softmax** | Fusion as the intensity-raising move, benchmarked. |
+| **S3 — Toward Flash Attention** | The online-softmax sketch, honestly scoped. |
+
+

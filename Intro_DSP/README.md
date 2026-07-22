@@ -129,3 +129,100 @@ Material: [`Real_Time_DSP.ipynb`](./Real_Time_DSP.ipynb) — the workshop Intro_
 | **S2 — Latency Budgets** | Application | Latency ≥ one block; compute < one block-duration; measured deadlines. |
 | **S3 — A Real-Time Pipeline** | Application | Threaded producer/consumer with headroom histograms and miss counts. |
 
+
+---
+
+# Ring 2 Workshops *(2026)*
+
+## Workshop 11 — Graph Signal Processing & GNNs *(available)*
+
+Material: [`Graph_Signal_Processing.ipynb`](./Graph_Signal_Processing.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Laplacian & Graph Fourier** | Graph harmonics; ring graph reduces to the DFT (1e-15). |
+| **S2 — Filtering on Graphs** | Spectral & polynomial (local) filters; sensor-field denoising. |
+| **S3 — Sampling on Graphs** | Bandlimited recovery from K nodes, exact; graph aliasing shown. |
+| **S4 — Message Passing = Learned Filters** | GCN from scratch: 10 labels → 89% of 80 nodes; MLP ablation 41%. |
+
+## Workshop 12 — Channel Coding *(available)*
+
+Material: [`Channel_Coding.ipynb`](./Channel_Coding.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Hamming** | Syndrome decoding; all 112 single-error cases corrected, exhaustively. |
+| **S2 — Convolutional + Viterbi** | Trellis DP == brute-force ML decode, verified. |
+| **S3 — LDPC & Polar at a Glance** | Survey session: belief propagation, polarization, the map. |
+
+## Workshop 13 — Sparse Coding & Dictionary Learning *(available)*
+
+Material: [`Sparse_Dictionary_Learning.ipynb`](./Sparse_Dictionary_Learning.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — OMP** | Planted support recovered exactly; the sparsity cliff mapped. |
+| **S2 — K-SVD** | 20/20 planted atoms recovered (|cos|>0.98). |
+| **S3 — Denoising with Learned Atoms** | Learned dictionary +2.5 dB where DCT loses ground. |
+
+## Workshop 14 — Blind Source Separation & ICA *(available)*
+
+Material: [`ICA_Blind_Source_Separation.ipynb`](./ICA_Blind_Source_Separation.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Why Correlation Isn't Enough** | Whitening reaches a rotation and goes silent. |
+| **S2 — FastICA** | Unmix 3 sources blind: |corr| ≥ 0.999 vs planted truth. |
+| **S3 — Limits & Practice** | Gaussian unidentifiability demonstrated; field guide. |
+
+## Workshop 15 — Time–Frequency II *(available)*
+
+Material: [`Time_Frequency_2.ipynb`](./Time_Frequency_2.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Wigner–Ville** | Razor concentration and its cross-term ghosts, both shown. |
+| **S2 — Synchrosqueezing** | Ridge width 9.1 Hz → one bin, no ghosts. |
+| **S3 — EMD** | Planted fast/slow/trend recovered at |corr| = 1.000. |
+
+## Workshop 16 — Cyclostationarity & HOS *(available)*
+
+Material: [`Cyclostationary_HOS.ipynb`](./Cyclostationary_HOS.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Cyclic Statistics** | BPSK's spikes at symbol rate and 2f_c. |
+| **S2 — Detection Below the Floor** | Under level uncertainty: energy 0.8σ vs cyclic 8.8σ at −10 dB. |
+| **S3 — Higher-Order Statistics** | Bicoherence 0.98 vs 0.11: phase coupling the PSD can't see. |
+
+## Workshop 17 — Radar Signal Processing *(available)*
+
+Material: [`Radar_Signal_Processing.ipynb`](./Radar_Signal_Processing.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Pulse Compression** | 30 m resolution from a 3 km pulse; both targets recovered exactly. |
+| **S2 — Doppler** | Range-Doppler map; both movers extracted to planted R and v. |
+| **S3 — CFAR** | 1 false alarm vs 109 across a 9× noise step. |
+| **S4 — SAR at a Glance** | A flown 205 m aperture resolves ±40 m scatterers. |
+
+## Workshop 18 — MIMO Communications *(available)*
+
+Material: [`MIMO_Communications.ipynb`](./MIMO_Communications.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Capacity** | log-det scaling ~linear in antennas, simulated. |
+| **S2 — Diversity** | BER slopes steepen with branches (MRC). |
+| **S3 — SVD Precoding** | UᴴHV = diag(σ) at 1e-15; verified-independent pipes; water-filling +23% at low SNR. |
+
+## Workshop 19 — Sigma-Delta & Quantization *(available)*
+
+Material: [`Sigma_Delta_Quantization.ipynb`](./Sigma_Delta_Quantization.ipynb)
+
+| Session | Objectives |
+|---|---|
+| **S1 — Quantization Noise** | 6 dB/bit and +3 dB/octave, measured. |
+| **S2 — Noise Shaping** | 1 bit → 11.3 effective bits at 64×, second-order loop. |
+
+

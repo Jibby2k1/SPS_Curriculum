@@ -9,26 +9,32 @@ stochastic viewpoint.
 
 ---
 
-## Workshop 1 — Adaptive Filtering: Affine Projection *(planned)*
+## Workshop 1 — Adaptive Filtering: Affine Projection *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — LMS to APA** | Theory | Wiener filtering recap, steepest descent, LMS; APA as a multi-constraint generalization. |
-| **S2 — APA in practice** | Application | Implement NLMS & APA in NumPy; echo-cancellation / system-identification demo; convergence vs step size. |
+Material: [`Intro_AdFilt_APA.ipynb`](./Intro_AdFilt_APA.ipynb)
 
-## Workshop 2 — Adaptive Filtering: Kalman *(planned)*
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — From Steepest Descent to LMS** | Theory → Application | §2: Wiener solution, LMS derivation & implementation | Derive $\mathbf{w}_o = R^{-1}\mathbf{p}$; watch LMS discover an unknown system. |
+| **S2 — NLMS & APA** | Theory → Application | §3–§4: normalization, affine projection, the colored-input race | Fix LMS's power sensitivity; see projection order buy convergence speed on correlated input. |
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — State-space models & the Kalman filter** | Theory | State-space form, predict/update cycle, the Kalman gain as optimal blending. |
-| **S2 — Tracking in practice** | Application | Implement a Kalman filter for a noisy tracking problem; tune $Q$/$R$; compare to APA from Workshop 1. |
+## Workshop 2 — Adaptive Filtering: Kalman *(available)*
 
-## Workshop 3 — Recurrent Neural Networks *(planned)*
+Material: [`Intro_AdFilt_KF.ipynb`](./Intro_AdFilt_KF.ipynb)
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — RNNs as nonlinear state-space models** | Theory | Recurrence, hidden state (the Kalman connection), backprop through time, vanishing gradients, LSTM/GRU. |
-| **S2 — Sequence prediction in PyTorch** | Application | Train an LSTM on a real time series; compare against Kalman/APA baselines. Builds on [Intro to PyTorch](../Intro_DL_4_Physics/README.md). |
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — State-Space Models & the Kalman Equations** | Theory | §2: predict/update cycle, the gain as a trust dial, scalar sanity check | Understand the five equations and why the innovation drives everything. |
+| **S2 — Tracking in Practice** | Application | §3: constant-velocity tracker, estimating unmeasured velocity, tuning $Q$/$R$ | Build a real tracker; see both mistuning failure modes. |
+
+## Workshop 3 — Recurrent Neural Networks *(available)*
+
+Material: [`Intro_RNN.ipynb`](./Intro_RNN.ipynb)
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — RNNs as Learned State-Space Models** | Theory | §2: recurrence, BPTT, vanishing/exploding gradients (demo), LSTM gating | Connect RNN ↔ Kalman; see *why* plain RNNs forget and how gates fix it. |
+| **S2 — Sequence Prediction in Practice** | Application | §3: LSTM forecaster vs persistence & linear AR baselines | Train honestly, clip gradients, and respect the linear baseline. Builds on [Intro to PyTorch](../Intro_DL_4_Physics/README.md). |
 
 **Where next:** attention-based sequence models in
 [Deep Learning for Physics → Transformers](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).

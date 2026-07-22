@@ -27,13 +27,15 @@ Partitioned into six 30–40 minute sessions:
 
 ---
 
-## Workshop 2 — Introduction to Python *(planned)*
+## Workshop 2 — Introduction to Python *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Language core** | Application | Setup (conda/venv, Jupyter), types, control flow, functions, comprehensions. |
-| **S2 — Data & objects** | Application | Lists/dicts/sets, classes, modules; reading & plotting data (NumPy + Matplotlib preview). |
-| **S3 — Scientific Python** | Application | NumPy vectorization, broadcasting, SciPy — the toolkit assumed by [DSP](../Intro_DSP/README.md) and [ML](../Intro_Mach_Learn/README.md) workshops. |
+Material: [`Intro_Python/Intro_Python.ipynb`](./Intro_Python/Intro_Python.ipynb) — the entry point of the programming track.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Language Core** | Application | §2: types, strings, control flow, functions, comprehensions | Write and run real Python; use the core idioms. |
+| **S2 — Data & Objects** | Application | §3: lists/dicts/sets/tuples, classes, modules | Organize data and code; build a small `Signal` class. |
+| **S3 — Scientific Python** | Application | §4–§5: NumPy vectorization, broadcasting, Matplotlib | Compute and plot the way [DSP](../Intro_DSP/README.md) and [ML](../Intro_Mach_Learn/README.md) workshops assume. |
 
 ## Workshop 3 — Introduction to MATLAB *(planned)*
 

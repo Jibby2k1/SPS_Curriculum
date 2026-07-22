@@ -36,13 +36,15 @@ Material: [`Basic_Topology.ipynb`](./Basic_Topology.ipynb)
 | **S2 — Compactness** | Theory | Compact Sets (all proofs through Heine–Borel) | Prove the core compactness theorems; understand why compactness is "the next best thing to finiteness." |
 | **S3 — Perfect & Connected Sets** | Theory | Perfect Sets, the Cantor Set, Connected Sets | Construct the Cantor set; characterize connected subsets of ℝ. |
 
-## 3. Numerical Sequences and Series *(planned)*
+## 3. Numerical Sequences and Series *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Sequences & convergence** | Theory | Convergent sequences, subsequences, Cauchy sequences, completeness of ℝ (uses compactness from Topology S2). |
-| **S2 — Limits superior/inferior & special sequences** | Theory | limsup/liminf, monotone convergence, $e$ as a limit (feeds [DSP §1.0](../../Intro_DSP/README.md)). |
-| **S3 — Series** | Theory | Comparison/root/ratio tests, power series, absolute convergence — groundwork for transforms as infinite sums. |
+Material: [`Numerical_Sequences_and_Series.ipynb`](./Numerical_Sequences_and_Series.ipynb)
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Sequences & Convergence** | Theory | Convergent sequences, subsequences, Cauchy sequences | Play the ε–N game; prove uniqueness/boundedness; completeness of ℝ via Bolzano–Weierstrass. |
+| **S2 — Monotone Sequences, limsup & $e$** | Theory | Monotone convergence, limsup/liminf, $e$ as a limit | Prove convergence without knowing the limit; construct $e$ (feeds [DSP §1.0](../../Intro_DSP/README.md)). |
+| **S3 — Series** | Theory | Cauchy criterion, geometric/harmonic series, comparison/root/ratio tests | Interrogate infinite sums; radius of convergence — the $z$-transform's region of convergence. |
 
 ## 4. Measure Theory *(planned)*
 

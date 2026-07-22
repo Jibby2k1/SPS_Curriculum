@@ -15,7 +15,7 @@ datapath itself*.
 |---|---|---|
 | **S1 — What is an FPGA?** | Theory | LUTs, flip-flops, routing fabric, DSP slices; FPGA vs CPU vs GPU trade-offs. |
 | **S2 — HDL basics** | Application | Verilog/VHDL: modules, combinational vs sequential logic, simulate a counter. |
-| **S3 — A hardware FIR filter** | Application | Implement the FIR filter from [DSP Filter Design](../Intro_DSP/README.md#workshop-2--filter-design-planned) in HDL; pipelining and fixed-point. |
+| **S3 — A hardware FIR filter** | Application | Implement the FIR filter from [DSP Filter Design](../Intro_DSP/README.md#workshop-2--filter-design-available) in HDL; pipelining and fixed-point. |
 | **S4 — Toolchain & deployment** | Application | Synthesis, place & route, timing closure; running on a real dev board. |
 
 Contributions welcome — see the [contribution guide](../README.md#contributing).

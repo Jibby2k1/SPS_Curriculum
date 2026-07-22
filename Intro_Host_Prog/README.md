@@ -17,12 +17,14 @@ command line).
 | **S3 — Concurrency in practice** | Application | Threads, locks, race conditions; a small producer/consumer pipeline in C or Python. |
 | **S4 — The shell & automation** | Application | Bash, pipes, cron, environment; packaging an experiment so it reruns cleanly. |
 
-## Workshop 2 — Introduction to Databases *(planned)*
+## Workshop 2 — Introduction to Databases *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Relational model & SQL** | Theory → Application | Tables, keys, normalization; SELECT/JOIN/GROUP BY on a sample sensor dataset (SQLite). |
-| **S2 — Databases from code** | Application | Python + SQLite/Postgres: parameterized queries, transactions, storing experiment results. |
-| **S3 — Beyond relational** | Application | Time-series & columnar stores (Parquet, DuckDB) for signal data; when each wins. |
+Material: [`Intro_Databases/Intro_Databases.ipynb`](./Intro_Databases/Intro_Databases.ipynb) — runs on `sqlite3`, zero installation.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Relational Model & SQL Basics** | Application | §2: tables, keys, constraints, SELECT | Design a sensor-logging schema; watch constraints reject bad data. |
+| **S2 — Joins, Aggregation & Transactions** | Application | §3–§4: JOIN, GROUP BY, atomicity | Reassemble entities; summarize per-sensor; make multi-step changes all-or-nothing. |
+| **S3 — Databases from Python** | Application | §5: parameterized queries, an experiment logger, beyond SQLite | Query safely (no injection); log training runs; know when to reach for Postgres/DuckDB. |
 
 Contributions welcome — see the [contribution guide](../README.md#contributing).

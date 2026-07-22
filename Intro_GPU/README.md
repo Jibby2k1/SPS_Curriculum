@@ -4,7 +4,7 @@ How to make scientific code fast: from CPU vectorization to GPU architecture and
 CUDA-backed Python. Pairs theory (what the hardware actually does) with application
 (porting NumPy code to the GPU).
 
-**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-planned);
+**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available);
 [Intro to C](../Intro_Func_Prog/Intro_C.ipynb) helps for the memory model.
 
 ---

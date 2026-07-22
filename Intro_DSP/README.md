@@ -6,7 +6,7 @@ application-focused series on filter design.
 **Prerequisites:** comfort with calculus and complex numbers.
 [Real Number Systems](../Intro_Math/Analysis/Real_Number_Systems.ipynb) and
 [Basic Topology](../Intro_Math/Analysis/Basic_Topology.ipynb) are helpful but not required.
-For the programming side, see [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-planned).
+For the programming side, see [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available).
 
 ---
 
@@ -27,20 +27,18 @@ notebook sections it covers.
 | **S6 — Fast Convolution** | Application | §2.4.3 (Overlap-Add, Overlap-Save) | Filter long/streaming signals with block convolution; benchmark against direct convolution. |
 
 **Where next:** apply these transforms in
-[Filter Design](#workshop-2--filter-design-planned) (application),
+[Filter Design](#workshop-2--filter-design-available) (application),
 [Adaptive Filtering](../Intro_Time_Series/README.md) (time series), or accelerate them in
 [Intro to GPU Systems](../Intro_GPU/README.md).
 
 ---
 
-## Workshop 2 — Filter Design *(planned)*
+## Workshop 2 — Filter Design *(available)*
 
-Application-focused counterpart to Workshop 1. Planned sessions:
+Material: [`Filter_Design.ipynb`](./Filter_Design.ipynb) — the application-focused counterpart to Workshop 1.
 
-| Session | Focus | Planned content | Objectives |
+| Session | Focus | Notebook sections | Objectives |
 |---|---|---|---|
-| **S1 — FIR filters** | Application | Windowed-sinc design, linear phase, `scipy.signal.firwin` | Design and apply an FIR low-pass; read magnitude/phase responses. |
-| **S2 — IIR filters** | Application | Butterworth/Chebyshev, bilinear transform, `scipy.signal.iirdesign` | Choose between FIR/IIR; understand stability from pole locations (ties back to Laplace, W1·S2). |
-| **S3 — Filter implementation** | Application | Fixed-point effects, biquad cascades, real-time streaming | Implement a robust cascade filter on a real signal (audio or sensor data). |
-
-Contributions welcome — see the [contribution guide](../README.md#contributing).
+| **S1 — FIR Filters** | Application | §2: windowed-sinc design, windows, linear phase | Design an FIR low-pass with `firwin`; read magnitude/phase; know why linear phase matters. |
+| **S2 — IIR Filters** | Application | §3: Butterworth/Chebyshev/elliptic, poles & zeros | Choose between FIR/IIR; verify stability from pole locations (ties back to Laplace, W1·S2). |
+| **S3 — Filters in Practice** | Application | §4: notch + low-pass on an ECG-like signal, `filtfilt`, SOS form | Clean a contaminated signal end-to-end; avoid the classic implementation pitfalls. |

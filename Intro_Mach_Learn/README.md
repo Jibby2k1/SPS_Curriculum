@@ -4,26 +4,30 @@ Theory-and-practice track on learning from data: from single neurons to scaling 
 The transformer workshop already exists in
 [Deep Learning for Physics](../Intro_DL_4_Physics/README.md#workshop-2--introduction-to-transformers-available).
 
-**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-planned);
+**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available);
 [Random Variables & Independence](../Intro_Math/Analysis/README.md) for the probability
 underpinnings.
 
 ---
 
-## Workshop 1 — Artificial Neural Networks *(planned)*
+## Workshop 1 — Artificial Neural Networks *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — From neuron to network** | Theory | Perceptron, activation functions, universal approximation intuition, loss surfaces. |
-| **S2 — Backpropagation** | Theory | Chain rule on the computational graph; gradient descent variants. |
-| **S3 — Train an MLP** | Application | NumPy-from-scratch MLP on a small dataset, then the same in PyTorch ([Intro to PyTorch](../Intro_DL_4_Physics/README.md)). |
+Material: [`Intro_ANN/Intro_ANN.ipynb`](./Intro_ANN/Intro_ANN.ipynb) — from scratch in NumPy, every gradient by hand.
 
-## Workshop 2 — Convolutional Neural Networks *(planned)*
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — From Neuron to Network** | Theory | §2: the spiral dataset, activations, why nonlinearity is non-negotiable | Understand what stacking + folding buys. |
+| **S2 — Backpropagation** | Theory → Application | §3: chain-rule derivation, implementation, gradient checking | Derive and *verify* every gradient. |
+| **S3 — Training the Network** | Application | §4: full training loop, decision-boundary visualization | Train to 100% on the spiral; run the width/nonlinearity/learning-rate experiments. |
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Convolution is a filter bank** | Theory | Convolution from [DSP](../Intro_DSP/README.md) → learned kernels; padding, stride, pooling, receptive fields. |
-| **S2 — Train a CNN** | Application | Image/spectrogram classification in PyTorch; visualize learned filters. |
+## Workshop 2 — Convolutional Neural Networks *(available)*
+
+Material: [`Intro_CNN/Intro_CNN.ipynb`](./Intro_CNN/Intro_CNN.ipynb)
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Convolution as a Learned Filter Bank** | Theory | §2: the CNN↔DSP dictionary, hand-made edge detector | Map conv/pool/stride/receptive field onto [DSP](../Intro_DSP/README.md) concepts. |
+| **S2 — Train a CNN on Spectrograms** | Application | §3: chirp/tone/noise classification, kernel & feature-map visualization | Train a classifier and *open the hood* on what it learned. |
 
 ## Workshop 3 — Scaling Neural Networks *(planned)*
 

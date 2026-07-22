@@ -4,7 +4,7 @@ Application track: build and train neural networks in PyTorch on physics-flavore
 Each workshop ships a completed instructor notebook plus fill-in-the-blank student
 versions (`*_blank_*.ipynb`) used in live sessions.
 
-**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-planned).
+**Prerequisites:** [Intro to Python](../Intro_Func_Prog/README.md#workshop-2--introduction-to-python-available).
 [Intro to GPU Systems](../Intro_GPU/README.md) explains the hardware these models train on;
 [Intro to ML](../Intro_Mach_Learn/README.md) covers the underlying theory.
 

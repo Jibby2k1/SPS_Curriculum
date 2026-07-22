@@ -30,25 +30,25 @@ flowchart LR
 |---|---|---|---|---|
 | [**Mathematics**](./Intro_Math/README.md) | [Real Number Systems](./Intro_Math/Analysis/Real_Number_Systems.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Basic Topology](./Intro_Math/Analysis/Basic_Topology.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |
-| | [Numerical Sequences and Series](./Intro_Math/Analysis/README.md#3-numerical-sequences-and-series-planned) | 📐 Theory | 🚧 Planned | — |
+| | [Numerical Sequences and Series](./Intro_Math/Analysis/Numerical_Sequences_and_Series.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Measure Theory](./Intro_Math/Analysis/README.md#4-measure-theory-planned) | 📐 Theory | 🚧 Planned | — |
 | | [Random Variables](./Intro_Math/Analysis/README.md#5-random-variables-planned) | 📐 Theory | 🚧 Planned | — |
 | | [Independence](./Intro_Math/Analysis/README.md#6-independence-planned) | 📐 Theory | 🚧 Planned | — |
 | [**Programming**](./Intro_Func_Prog/README.md) | [Introduction to C](./Intro_Func_Prog/Intro_C.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
-| | [Introduction to Python](./Intro_Func_Prog/README.md#workshop-2--introduction-to-python-planned) | 🛠️ Application | 🚧 Planned | — |
+| | [Introduction to Python](./Intro_Func_Prog/Intro_Python/Intro_Python.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Introduction to MATLAB](./Intro_Func_Prog/README.md#workshop-3--introduction-to-matlab-planned) | 🛠️ Application | 🚧 Planned | — |
 | [**Host Programming**](./Intro_Host_Prog/README.md) | [Operating Systems](./Intro_Host_Prog/README.md#workshop-1--introduction-to-operating-systems-planned) | 📐+🛠️ | 🚧 Planned | — |
-| | [Databases](./Intro_Host_Prog/README.md#workshop-2--introduction-to-databases-planned) | 🛠️ Application | 🚧 Planned | — |
+| | [Databases](./Intro_Host_Prog/Intro_Databases/Intro_Databases.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**DSP**](./Intro_DSP/README.md) | [Foundations of Signal Processing](./Intro_DSP/Foundations_of_Signal_Processing_1.ipynb) | 📐 Theory | ✅ Available | [Raul](https://github.com/Jibby2k1) |
-| | [Filter Design](./Intro_DSP/README.md#workshop-2--filter-design-planned) | 🛠️ Application | 🚧 Planned | — |
+| | [Filter Design](./Intro_DSP/Filter_Design.ipynb) | 🛠️ Application | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | [**GPU Systems**](./Intro_GPU/README.md) | [GPU-Accelerated Computing (Numba & CuPy)](./Intro_GPU/Intro_GPU.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [RAPIDS](./Intro_GPU/README.md#workshop-2--introduction-to-rapids-planned) | 🛠️ Application | 🚧 Planned | — |
 | [**FPGA Systems**](./Intro_FPGA/README.md) | [Introduction to FPGA](./Intro_FPGA/README.md#workshop-1--introduction-to-fpga-planned) | 🛠️ Application | 🚧 Planned | — |
-| [**Time Series**](./Intro_Time_Series/README.md) | [Adaptive Filtering (APA)](./Intro_Time_Series/README.md#workshop-1--adaptive-filtering-affine-projection-planned) | 📐+🛠️ | 🚧 Planned | — |
-| | [Adaptive Filtering (Kalman)](./Intro_Time_Series/README.md#workshop-2--adaptive-filtering-kalman-planned) | 📐+🛠️ | 🚧 Planned | — |
-| | [Recurrent Neural Networks](./Intro_Time_Series/README.md#workshop-3--recurrent-neural-networks-planned) | 📐+🛠️ | 🚧 Planned | — |
-| [**Machine Learning**](./Intro_Mach_Learn/README.md) | [Artificial Neural Networks](./Intro_Mach_Learn/README.md#workshop-1--artificial-neural-networks-planned) | 📐+🛠️ | 🚧 Planned | — |
-| | [Convolutional Neural Networks](./Intro_Mach_Learn/README.md#workshop-2--convolutional-neural-networks-planned) | 📐+🛠️ | 🚧 Planned | — |
+| [**Time Series**](./Intro_Time_Series/README.md) | [Adaptive Filtering (APA)](./Intro_Time_Series/Intro_AdFilt_APA.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Adaptive Filtering (Kalman)](./Intro_Time_Series/Intro_AdFilt_KF.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Recurrent Neural Networks](./Intro_Time_Series/Intro_RNN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| [**Machine Learning**](./Intro_Mach_Learn/README.md) | [Artificial Neural Networks](./Intro_Mach_Learn/Intro_ANN/Intro_ANN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
+| | [Convolutional Neural Networks](./Intro_Mach_Learn/Intro_CNN/Intro_CNN.ipynb) | 📐+🛠️ | ✅ Available | [Raul](https://github.com/Jibby2k1) |
 | | [Scaling Neural Networks](./Intro_Mach_Learn/README.md#workshop-3--scaling-neural-networks-planned) | 📐+🛠️ | 🚧 Planned | — |
 | [**DL for Physics**](./Intro_DL_4_Physics/README.md) | [Introduction to PyTorch](./Intro_DL_4_Physics/intro_pytorch/intro_pytorch.ipynb) | 🛠️ Application | ✅ Available | [Awwab](https://github.com/kaddu341) |
 | | [Introduction to Transformers](./Intro_DL_4_Physics/intro_transformers/intro_transformers.ipynb) | 🛠️ Application | ✅ Available | [Awwab](https://github.com/kaddu341) |
@@ -72,8 +72,9 @@ author. To contribute:
 1. Fork the repo and create a feature branch.
 2. Pick a planned workshop (or improve an existing one) — follow its session outline, or
    propose changes to it.
-3. Match the house style: sessions sized 30–40 minutes, tagged theory/application, with
-   cross-references to related workshops.
+3. Match the house style — see the [**Style Guide**](./STYLE_GUIDE.md): sessions sized 30–40
+   minutes, tagged theory/application, intuition spelled out before rigor, with cross-references
+   to related workshops.
 4. Submit a PR.
 
 ## Acknowledgements

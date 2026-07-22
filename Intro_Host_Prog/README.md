@@ -8,14 +8,16 @@ command line).
 
 ---
 
-## Workshop 1 — Introduction to Operating Systems *(planned)*
+## Workshop 1 — Introduction to Operating Systems *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Processes & the kernel** | Theory | What an OS does; processes vs threads; syscalls; observing them with `ps`/`strace`. |
-| **S2 — Memory & scheduling** | Theory | Virtual memory, paging, the scheduler — why your benchmark numbers wobble ([GPU latency](../Intro_GPU/README.md) callback). |
-| **S3 — Concurrency in practice** | Application | Threads, locks, race conditions; a small producer/consumer pipeline in C or Python. |
-| **S4 — The shell & automation** | Application | Bash, pipes, cron, environment; packaging an experiment so it reruns cleanly. |
+Material: [`Intro_OS/Intro_OS.ipynb`](./Intro_OS/Intro_OS.ipynb) — requires Linux/macOS/WSL or Colab.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Processes & the Kernel** | Theory → Application | §2: PIDs, the process tree via /proc, strace | See what a process is; watch syscalls happen. |
+| **S2 — Memory & Scheduling** | Theory → Application | §3–§4: /proc/self/maps, lazy allocation demo, scheduler jitter | Understand virtual memory & why benchmarks wobble ([GPU latency](../Intro_GPU/README.md) callback). |
+| **S3 — Concurrency in Practice** | Application | §5: a real race condition, locks, GIL, multiprocessing, producer/consumer | Cause a race, fix it twice (lock, queue); get true parallelism. |
+| **S4 — The Shell & Automation** | Application | §6: pipes, redirection, environment, reproducibility checklist | Compose tools; package experiments that rerun cleanly. |
 
 ## Workshop 2 — Introduction to Databases *(available)*
 

@@ -29,12 +29,14 @@ Material: [`Intro_CNN/Intro_CNN.ipynb`](./Intro_CNN/Intro_CNN.ipynb)
 | **S1 — Convolution as a Learned Filter Bank** | Theory | §2: the CNN↔DSP dictionary, hand-made edge detector | Map conv/pool/stride/receptive field onto [DSP](../Intro_DSP/README.md) concepts. |
 | **S2 — Train a CNN on Spectrograms** | Application | §3: chirp/tone/noise classification, kernel & feature-map visualization | Train a classifier and *open the hood* on what it learned. |
 
-## Workshop 3 — Scaling Neural Networks *(planned)*
+## Workshop 3 — Scaling Neural Networks *(available)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Why scale?** | Theory | Scaling laws, compute/data/parameters trade-offs, batching and hardware utilization ([GPU systems](../Intro_GPU/README.md)). |
-| **S2 — Scaling in practice** | Application | Mixed precision, data-parallel training, profiling a training loop. |
+Material: [`Scale_NN/Scale_NN.ipynb`](./Scale_NN/Scale_NN.ipynb) — all benchmarks CPU-runnable; GPU-scale tools covered as a map.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Why Scale? Accounting & Scaling Laws** | Theory → Application | §2–§3: param/FLOP counting, a laptop-scale scaling study | Count before optimizing; watch loss power-law onto the noise floor. |
+| **S2 — Making Training Fast** | Application | §4–§7: throughput-vs-batch knee, profiler, gradient accumulation (proved exact), GPU toolbox map | Find the binding constraint; spend the cheap resource ([GPU systems](../Intro_GPU/README.md)). |
 
 ## Workshop 4 — Transformers *(available, hosted in DL for Physics)*
 

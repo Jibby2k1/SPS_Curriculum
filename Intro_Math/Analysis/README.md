@@ -46,27 +46,33 @@ Material: [`Numerical_Sequences_and_Series.ipynb`](./Numerical_Sequences_and_Ser
 | **S2 — Monotone Sequences, limsup & $e$** | Theory | Monotone convergence, limsup/liminf, $e$ as a limit | Prove convergence without knowing the limit; construct $e$ (feeds [DSP §1.0](../../Intro_DSP/README.md)). |
 | **S3 — Series** | Theory | Cauchy criterion, geometric/harmonic series, comparison/root/ratio tests | Interrogate infinite sums; radius of convergence — the $z$-transform's region of convergence. |
 
-## 4. Measure Theory *(planned)*
+## 4. Measure Theory *(draft — pending review)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — σ-algebras & measures** | Theory | Motivation (non-measurable sets), σ-algebras, Borel sets, measure axioms. |
-| **S2 — Lebesgue measure & integration** | Theory | Lebesgue vs Riemann, simple functions, convergence theorems (MCT/DCT). |
-| **S3 — $L^p$ spaces** | Theory | $L^1, L^2, L^\infty$, Hölder & Minkowski — direct payoff in [DSP §2.0](../../Intro_DSP/README.md). |
+Material: [`Measure_Theory.ipynb`](./Measure_Theory.ipynb)
 
-## 5. Random Variables *(planned)*
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — σ-algebras & Measures** | Theory | Vitali motivation, σ-algebras, Borel sets, measure axioms, continuity | See why not everything is measurable; prove continuity from below. |
+| **S2 — Lebesgue Measure & Integration** | Theory | Outer measure & Carathéodory, null sets, Cantor set, simple functions, MCT/Fatou/DCT | Build the integral; see the escaping-bump counterexample. |
+| **S3 — $L^p$ Spaces** | Theory | Norms, Hölder proof via Young, $\ell^1 \subseteq \ell^2$ vs the line | Prove Hölder; cash it in for [DSP §2.0](../../Intro_DSP/README.md). |
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Probability spaces** | Theory | Probability as a measure; random variables as measurable functions. |
-| **S2 — Distributions & expectation** | Theory | CDFs, densities, expectation as Lebesgue integral, moments. |
+## 5. Random Variables *(draft — pending review)*
 
-## 6. Independence *(planned)*
+Material: [`Random_Variables.ipynb`](./Random_Variables.ipynb)
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — Independence & product measures** | Theory | Independent events/σ-algebras/variables; Borel–Cantelli. |
-| **S2 — Laws of large numbers** | Theory | WLLN/SLLN — the foundation for statistical learning ([Intro to ML](../../Intro_Mach_Learn/README.md)). |
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Probability Spaces & Random Variables** | Theory | Probability as a measure; RVs as measurable functions; pushforward laws; CDF theorem | Prove the CDF's three properties from measure continuity. |
+| **S2 — Distributions, Expectation & Moments** | Theory | Densities, LOTUS, Markov & Chebyshev proofs, sampling vs theory | One-line tail bounds; expectation as the Lebesgue integral. |
+
+## 6. Independence *(draft — pending review)*
+
+Material: [`Independence.ipynb`](./Independence.ipynb)
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — Independence & Borel–Cantelli** | Theory | Independence for events/σ-algebras/RVs, product measures, both Borel–Cantelli proofs | The pairwise-vs-mutual trap; the zero–one dichotomy. |
+| **S2 — Laws of Large Numbers** | Theory | WLLN via Chebyshev (full proof), SLLN statement, correlated-samples demo | Why averages converge — and what breaks without independence ([Intro to ML](../../Intro_Mach_Learn/README.md)). |
 
 ---
 

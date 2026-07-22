@@ -4,7 +4,7 @@ Signals that evolve — and models that adapt with them. Bridges classical adapt
 filtering and modern recurrent networks.
 
 **Prerequisites:** [DSP Workshop 1](../Intro_DSP/README.md) (convolution, transforms);
-[Random Variables](../Intro_Math/Analysis/README.md#5-random-variables-planned) for the
+[Random Variables](../Intro_Math/Analysis/README.md#5-random-variables-draft--pending-review) for the
 stochastic viewpoint.
 
 ---

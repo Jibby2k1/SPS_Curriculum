@@ -4,7 +4,7 @@ The theory backbone of the curriculum. Currently one track:
 
 | Track | Status | Description |
 |---|---|---|
-| [Analysis](./Analysis/README.md) | 3 of 6 workshops available | Real numbers → topology → sequences/series → measure → probability. Rudin-style rigor with interactive visuals. |
+| [Analysis](./Analysis/README.md) | complete — 3 available + 3 drafts pending review | Real numbers → topology → sequences/series → measure → probability. Rudin-style rigor with interactive visuals. |
 
 Future tracks under consideration: Linear Algebra, Optimization.
 

@@ -9,13 +9,15 @@ datapath itself*.
 
 ---
 
-## Workshop 1 — Introduction to FPGA *(planned)*
+## Workshop 1 — Introduction to FPGA *(draft — pending review)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — What is an FPGA?** | Theory | LUTs, flip-flops, routing fabric, DSP slices; FPGA vs CPU vs GPU trade-offs. |
-| **S2 — HDL basics** | Application | Verilog/VHDL: modules, combinational vs sequential logic, simulate a counter. |
-| **S3 — A hardware FIR filter** | Application | Implement the FIR filter from [DSP Filter Design](../Intro_DSP/README.md#workshop-2--filter-design-available) in HDL; pipelining and fixed-point. |
-| **S4 — Toolchain & deployment** | Application | Synthesis, place & route, timing closure; running on a real dev board. |
+Material: [`Intro_FPGA.ipynb`](./Intro_FPGA.ipynb) — Verilog must be simulated (Icarus/EDA Playground); carries a review banner.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — What Is an FPGA?** | Theory | §2: LUTs/FFs/DSP slices; time vs space computing; the CPU/GPU/FPGA trade table | Know when the FPGA wins and why. |
+| **S2 — HDL Basics** | Application | §3: combinational vs sequential Verilog, a counter + testbench + waveforms | Describe circuits, don't instruct; simulate and read waveforms. |
+| **S3 — A Hardware FIR Filter** | Application | §4: transposed FIR in Q1.15 from [Filter Design](../Intro_DSP/README.md#workshop-2--filter-design-available) taps | Fixed-point, pipelining, golden-model verification. |
+| **S4 — Toolchain & Deployment** | Application | §5: synthesis → place & route → timing closure → bitstream | Understand slack; blink a real board. |
 
 Contributions welcome — see the [contribution guide](../README.md#contributing).

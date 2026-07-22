@@ -26,11 +26,11 @@ RAPIDS below.
 
 ---
 
-## Workshop 2 — Introduction to RAPIDS *(planned)*
+## Workshop 2 — Introduction to RAPIDS *(draft — pending review)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — cuDF** | Application | pandas → cuDF: GPU dataframes, when transfers dominate, benchmarking honestly. |
-| **S2 — cuML & cuSignal** | Application | GPU-accelerated ML primitives and signal processing; ties to [DSP](../Intro_DSP/README.md) and [ML](../Intro_Mach_Learn/README.md). |
+Material: [`Intro_RAPIDS.ipynb`](./Intro_RAPIDS.ipynb) — requires an NVIDIA GPU (Colab works); carries a review banner.
 
-Contributions welcome — see the [contribution guide](../README.md#contributing).
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — cuDF** | Application | §2: pandas → cuDF port, the honest end-to-end benchmark, the crossover | Charge the transfer; find where the GPU actually wins. |
+| **S2 — cuML** | Application | §3: KMeans bake-off, the three-condition decision rule | Know when RAPIDS earns its keep vs sklearn ([ML](../Intro_Mach_Learn/README.md)). |

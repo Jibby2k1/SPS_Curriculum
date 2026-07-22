@@ -37,11 +37,13 @@ Material: [`Intro_Python/Intro_Python.ipynb`](./Intro_Python/Intro_Python.ipynb)
 | **S2 — Data & Objects** | Application | §3: lists/dicts/sets/tuples, classes, modules | Organize data and code; build a small `Signal` class. |
 | **S3 — Scientific Python** | Application | §4–§5: NumPy vectorization, broadcasting, Matplotlib | Compute and plot the way [DSP](../Intro_DSP/README.md) and [ML](../Intro_Mach_Learn/README.md) workshops assume. |
 
-## Workshop 3 — Introduction to MATLAB *(planned)*
+## Workshop 3 — Introduction to MATLAB *(draft — pending review)*
 
-| Session | Focus | Planned content |
-|---|---|---|
-| **S1 — MATLAB fundamentals** | Application | Matrices as the native type, indexing, scripts vs functions, plotting. |
-| **S2 — Signal processing in MATLAB** | Application | Signal Processing Toolbox: `fft`, `filter`, `freqz` — mirrors [DSP Workshop 1](../Intro_DSP/README.md) in MATLAB idiom. |
+Material: [`Intro_MATLAB/Intro_MATLAB.ipynb`](./Intro_MATLAB/Intro_MATLAB.ipynb) — code must be run in MATLAB/Octave; carries a review banner.
+
+| Session | Focus | Notebook sections | Objectives |
+|---|---|---|---|
+| **S1 — MATLAB Fundamentals** | Application | §1–§2: matrices as the native type, the three Python↔MATLAB traps, plotting | Move fluently between NumPy and MATLAB idiom. |
+| **S2 — Signal Processing in MATLAB** | Application | §3–§4: `fft` one-sided spectrum recipe, `fir1`/`butter`/`freqz`/`filtfilt` | Mirror [DSP Workshop 1](../Intro_DSP/README.md) and [Filter Design](../Intro_DSP/Filter_Design.ipynb); dodge the Nyquist-normalization trap. |
 
 Contributions welcome — see the [contribution guide](../README.md#contributing).

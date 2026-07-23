@@ -35,6 +35,7 @@ flowchart LR
 Start with [**START_HERE.md**](./START_HERE.md) for guided learning paths; see the
 [**ROADMAP**](./ROADMAP.md) for what's next, [**RECORDING.md**](./RECORDING.md) for the
 video format, and [**VIDEO_PLAN.md**](./VIDEO_PLAN.md) for the full generated recording plan.
+App integration plan: [**GRADUS_INTEGRATION.md**](./GRADUS_INTEGRATION.md).
 Contributors: [**CONTRIBUTING.md**](./CONTRIBUTING.md) + `pip install -r requirements.txt` +
 `python tools/validate.py`.
 

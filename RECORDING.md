@@ -1,5 +1,7 @@
 # Recording Guide
 
+> Hardware/sync setup (a6700 + body mic + screen, OBS, Zoom's role): see [RECORDING_RIG.md](./RECORDING_RIG.md).
+
 House format for turning sessions into YouTube videos. **One session = one video**; one
 topic README = one playlist. Everything below keeps videos in the 30–40 minute window.
 

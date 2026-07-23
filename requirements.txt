@@ -1,0 +1,14 @@
+# The stack every executable workshop in this repository was verified against.
+# Install:  pip install -r requirements.txt        (or: uv pip install -r requirements.txt)
+# Torch note: the CPU build is sufficient for every ✅ workshop; GPU-only workshops
+# (Triton, HW-Accelerated Computing, RAPIDS, CUDA C++) carry their own install notes.
+
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.1
+torch==2.13.0        # CPU build is fine: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# for running/validating notebooks headlessly (contributors + tools/validate.py)
+jupyter
+nbformat==5.10.4
+nbclient==0.11.0

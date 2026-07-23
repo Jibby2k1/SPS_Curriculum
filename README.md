@@ -33,8 +33,10 @@ flowchart LR
 ```
 
 Start with [**START_HERE.md**](./START_HERE.md) for guided learning paths; see the
-[**ROADMAP**](./ROADMAP.md) for what's next and [**RECORDING.md**](./RECORDING.md) for the
-video format.
+[**ROADMAP**](./ROADMAP.md) for what's next, [**RECORDING.md**](./RECORDING.md) for the
+video format, and [**VIDEO_PLAN.md**](./VIDEO_PLAN.md) for the full generated recording plan.
+Contributors: [**CONTRIBUTING.md**](./CONTRIBUTING.md) + `pip install -r requirements.txt` +
+`python tools/validate.py`.
 
 ## Workshops
 

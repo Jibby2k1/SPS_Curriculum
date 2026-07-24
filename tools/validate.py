@@ -9,6 +9,11 @@ Checks (fast, no execution):
   3. no corrupted LaTeX escapes (raw control characters) in notebook markdown
   4. every draft-tier notebook (📝 in the root README) carries its ⚠️ banner
   5. every teaching notebook is linked from the root README table
+  6. every session marker is followed by a 🎓 teacher-note block
+  7. every result-producing code cell is followed by a debrief markdown cell
+
+Checks 6-7 report as warnings while the narration sweep is in progress; pass
+--strict-narration to enforce them, --narration to list the notebooks with gaps.
 
 Optionally (--execute): run one notebook top-to-bottom on a fresh kernel and
 report any cell errors — the check every new/edited workshop must pass.
@@ -91,6 +96,64 @@ def check_banners_and_index():
             problems.append(f"NOT IN README     {nb_path}")
     return problems
 
+def teaching_notebooks():
+    out = []
+    for p in sorted(glob.glob("**/*.ipynb", recursive=True)):
+        base = os.path.basename(p)
+        if any(tag in base for tag in ("blank", "_sum25", "_fall25", "_summer25")):
+            continue
+        out.append(p)
+    return out
+
+def produces_result(src):
+    """A code cell worth debriefing: it shows the reader something."""
+    return any(k in src for k in ("print(", "plt.", "display(", "sns.", ".show()"))
+
+def is_debrief(src):
+    """Markdown that reads an output back, vs. a heading/session marker/intuition cell."""
+    s = src.lstrip()
+    if s.startswith(("#", "---", "<details")) or "🕐" in s or "💡" in s:
+        return False
+    return bool(s)
+
+def check_narration():
+    """Checks 6 & 7: teacher-note coverage per session, and code-cell debrief coverage.
+
+    Reported as warnings — the repo is mid-sweep, so these do not fail the build unless
+    --strict-narration is passed.
+    """
+    rows = []
+    for p in teaching_notebooks():
+        cells = json.load(open(p, encoding="utf-8"))["cells"]
+        sessions = sum(1 for c in cells
+                       if c["cell_type"] == "markdown" and "🕐" in "".join(c["source"]))
+        notes = sum(1 for c in cells
+                    if c["cell_type"] == "markdown" and "🎓" in "".join(c["source"]))
+        want = deb = 0
+        for i, c in enumerate(cells):
+            if c["cell_type"] != "code" or not produces_result("".join(c["source"])):
+                continue
+            want += 1
+            if i + 1 < len(cells) and cells[i + 1]["cell_type"] == "markdown" \
+                    and is_debrief("".join(cells[i + 1]["source"])):
+                deb += 1
+        rows.append((p, sessions, notes, want, deb))
+    return rows
+
+def report_narration(rows, verbose):
+    gaps = [r for r in rows if r[2] < r[1] or r[4] < r[3]]
+    ses, notes = sum(r[1] for r in rows), sum(r[2] for r in rows)
+    want, deb = sum(r[3] for r in rows), sum(r[4] for r in rows)
+    print(f"\nnarration coverage over {len(rows)} teaching notebooks")
+    print(f"  teacher notes : {notes}/{ses} sessions ({notes/max(ses,1):.0%})")
+    print(f"  debriefs      : {deb}/{want} result cells ({deb/max(want,1):.0%})")
+    print(f"  notebooks with a gap: {len(gaps)}")
+    if verbose:
+        for p, s, n, w, d in sorted(gaps, key=lambda r: (r[2] - r[1], r[4] - r[3])):
+            print(f"    {p:62} notes {n}/{s}  debriefs {d}/{w}")
+    return [f"NARRATION GAP     {p}: notes {n}/{s}, debriefs {d}/{w}"
+            for p, s, n, w, d in gaps]
+
 def execute_notebook(path):
     import nbformat
     from nbclient import NotebookClient
@@ -103,6 +166,8 @@ def execute_notebook(path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--execute", metavar="NOTEBOOK", help="also execute one notebook on a fresh kernel")
+    ap.add_argument("--narration", action="store_true", help="list every notebook with a narration gap")
+    ap.add_argument("--strict-narration", action="store_true", help="treat narration gaps as failures")
     args = ap.parse_args()
 
     if not os.path.exists("README.md"):
@@ -114,6 +179,10 @@ def main():
     for p in problems:
         print(p)
     print(f"\n{len(files)} files scanned — {'CLEAN' if not problems else f'{len(problems)} problem(s)'}")
+
+    narration = report_narration(check_narration(), args.narration)
+    if args.strict_narration:
+        problems += narration
 
     if args.execute:
         print(f"\nexecuting {args.execute} ...")

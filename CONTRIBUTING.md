@@ -9,7 +9,9 @@ verified** — and everything below exists to make hitting it easy.
    [Git workshop](./Intro_Host_Prog/Intro_Git/Intro_Git.ipynb) walks this exact loop.
 2. Set up the verified environment: `pip install -r requirements.txt`.
 3. Write your workshop following the [**Style Guide**](./STYLE_GUIDE.md):
-   30–40 min 🕐 session markers, 💡 intuition before rigor, cross-references, Where-next.
+   30–40 min 🕐 session markers, 💡 intuition before rigor, a debrief after every
+   result-producing code cell, a 🎓 teacher-note block per session, cross-references,
+   Where-next.
 4. **Verify before you PR** (this is the house discipline):
    - your notebook runs top-to-bottom on a fresh kernel:
      `python tools/validate.py --execute path/to/Your_Workshop.ipynb`
@@ -17,7 +19,8 @@ verified** — and everything below exists to make hitting it easy.
      *not* hand-derive (a closed form, a reference solver, a planted ground truth, an
      exhaustive brute force). If a demo's numbers contradict its prose, fix the experiment
      or the prose — never ship them disagreeing.
-   - links & anchors resolve repo-wide: `python tools/validate.py`
+   - links, anchors, and narration coverage repo-wide: `python tools/validate.py`
+     (add `--narration` to list notebooks still missing teacher notes or debriefs)
 5. Add your workshop to the topic README's session table and the root README table
    (✅ if executed clean; 📝 with an in-notebook ⚠️ banner if it needs hardware or an
    expert proof-read you can't provide).
@@ -29,6 +32,9 @@ verified** — and everything below exists to make hitting it easy.
   MATLAB, a microcontroller), fix what breaks, remove the banner.
 - **Record a session**: the [Recording guide](./RECORDING.md) maps notebooks → videos.
 - **Generate/refresh student blanks** for a teaching term (see existing `*_blank_*` files).
+  After revising a notebook's prose, re-sync its blank so students read the current
+  narration: `python tools/sync_blanks.py --apply` (dry-run without `--apply`). It copies
+  markdown from the parent, drops 🎓 teacher notes, and leaves the blank's code cells alone.
 - Improve an intuition cell that didn't land for you — you are the target audience.
 
 ## Ground rules

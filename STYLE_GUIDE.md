@@ -45,6 +45,63 @@ cell:
 The rigorous cell that follows stays rigorous — the intuition cell is scaffolding, not a
 replacement. Where a visual helper exists, the order is: intuition → visual → proof.
 
+### Debrief rule
+
+Every code cell that *produces a result worth looking at* — a number, a plot, an oracle
+check, a timing — is followed by a markdown cell that reads the output back to the
+reader:
+
+> **What just happened.** The learned score matches the closed-form one to cosine
+> 0.998 — 'predict the noise' really was score estimation. The arrows disagree only far
+> from the data, where no training samples ever landed.
+
+Three sentences is plenty. Name the actual number, say what it proves, and — where the
+result has a limitation — say where it breaks down. A student reading alone should never
+meet an output they can't interpret.
+
+Cells that only set up (imports, helper definitions, data loading) need no debrief; the
+rule is about results, not lines of code.
+
+### Teacher notes
+
+Session markers and 💡 cells are what the instructor *says*. Teacher notes are how the
+session is *run*, and they live in the main notebook — the `*_blank_*` student copies
+omit them — inside a collapsed block so a student browsing the notebook sees a tidy page:
+
+```html
+<details>
+<summary>🎓 <b>Teacher notes — §3 Langevin dynamics</b></summary>
+
+**Timing:** ~12 min. Don't rush the noise term; it is the whole point of the section.
+
+**Board first:** sketch the compass field by hand before running the cell — students who
+see the arrows drawn never confuse the score with gradient descent on a loss.
+
+**Misconception:** "score = ∇loss." It is the gradient of the *log-density*, taken with
+respect to $x$, not the parameters. Ask someone to say aloud which variable we
+differentiate.
+
+**Ask the room:** "why inject noise at all?" — let them argue before you answer.
+
+**If the demo misbehaves:** cosine below 0.9 usually means too few training steps; bump
+to 5000 and keep talking while it runs.
+</details>
+```
+
+One block per session at minimum, placed just after the 🕐 session marker; add
+section-level blocks wherever a specific section is hard to deliver. Draw on the fields
+that apply — don't pad a block to hit all of them:
+
+- **Timing** — minutes for the section, and what to cut when running late.
+- **Board first / analogy** — what to draw or say before any formalism appears.
+- **Misconception** — the specific wrong idea students arrive with, and the question that
+  surfaces it.
+- **Ask the room** — a question to hand back to students instead of answering.
+- **If the demo misbehaves** — the failure you should expect live, and the recovery.
+- **Prereq check** — what to re-derive on the spot if the room looks lost.
+
+Write them to a colleague who knows the subject but has never taught this session.
+
 ## Archetypes
 
 Different content types are organized differently; only the skeleton above is shared.
@@ -83,12 +140,19 @@ Different content types are organized differently; only the skeleton above is sh
   intuition cells and ordering, not word count.
 - Cross-reference generously: relative links to other workshops whenever a concept is
   taught elsewhere ("we proved this in [Basic Topology](...)").
+- Narration earns its place by carrying *information* — a number, a caveat, a reason, a
+  connection to another workshop. A sentence that only restates the heading, or a teacher
+  note that says "explain this clearly," is padding: cut it. When revising a thin
+  notebook, the test is not "is it longer" but "can a student who missed the meeting
+  follow it alone."
 
 ## Checklist for a new or revised notebook
 
 - [ ] Shared skeleton (attribution → title → pitch → §0 motivation → §1 prereqs → ... → conclusion)
 - [ ] Session markers in-notebook, matching the topic README table
 - [ ] 💡 intuition cell before every proof/derivation/dense definition
+- [ ] Debrief cell after every result-producing code cell (names the actual number)
+- [ ] 🎓 teacher-note block after every session marker (main notebook only, not blanks)
 - [ ] Correct archetype layout (theory / application / hybrid)
 - [ ] All code cells run top-to-bottom on a fresh kernel (note any GPU/hardware requirements)
 - [ ] "Where next" links, and README links back to the notebook

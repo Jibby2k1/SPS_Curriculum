@@ -112,8 +112,11 @@ def produces_result(src):
     set up need no debrief — a version banner is not a result. A cell that both
     imports and plots still counts.
     """
-    shows = any(k in src for k in ("print(", "plt.", "display(", "sns.", ".show()"))
-    plots = any(k in src for k in ("plt.", "sns.", ".show()"))
+    # Only top-level statements produce output; plt/print inside a `def` is a
+    # helper being defined, not a result being shown.
+    top = "\n".join(l for l in src.split("\n") if l and not l[0].isspace())
+    shows = any(k in top for k in ("print(", "plt.", "display(", "sns.", ".show()"))
+    plots = any(k in top for k in ("plt.", "sns.", ".show()"))
     is_setup = re.match(r"\s*(import|from)\s", src) is not None
     return shows and not (is_setup and not plots)
 

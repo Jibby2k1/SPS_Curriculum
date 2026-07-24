@@ -106,8 +106,16 @@ def teaching_notebooks():
     return out
 
 def produces_result(src):
-    """A code cell worth debriefing: it shows the reader something."""
-    return any(k in src for k in ("print(", "plt.", "display(", "sns.", ".show()"))
+    """A code cell worth debriefing: it shows the reader something.
+
+    Import/setup cells are exempt, per STYLE_GUIDE's rule that cells which only
+    set up need no debrief — a version banner is not a result. A cell that both
+    imports and plots still counts.
+    """
+    shows = any(k in src for k in ("print(", "plt.", "display(", "sns.", ".show()"))
+    plots = any(k in src for k in ("plt.", "sns.", ".show()"))
+    is_setup = re.match(r"\s*(import|from)\s", src) is not None
+    return shows and not (is_setup and not plots)
 
 def is_debrief(src):
     """Markdown that reads an output back, vs. a heading/session marker/intuition cell."""

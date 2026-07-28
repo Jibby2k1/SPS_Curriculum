@@ -11,6 +11,7 @@ Checks (fast, no execution):
   5. every teaching notebook is linked from the root README table
   6. every session marker is followed by a 🎓 teacher-note block
   7. every result-producing code cell is followed by a debrief markdown cell
+  8. every teaching notebook's first cell is an Open-in-Colab badge linking to itself
 
 Checks 6-7 report as warnings while the narration sweep is in progress; pass
 --strict-narration to enforce them, --narration to list the notebooks with gaps.
@@ -88,12 +89,19 @@ def check_banners_and_index():
         if "⚠️" not in head:
             problems.append(f"MISSING BANNER    {path} is 📝 in README but has no ⚠️ banner")
     # 5: every teaching notebook appears in the root README
+    # 8: every teaching notebook's first cell is its own Colab badge
     for nb_path in glob.glob("**/*.ipynb", recursive=True):
         base = os.path.basename(nb_path)
         if any(tag in base for tag in ("blank", "_sum25", "_fall25", "_summer25")):
             continue
         if nb_path not in readme and "./" + nb_path not in readme:
             problems.append(f"NOT IN README     {nb_path}")
+        nb = json.load(open(nb_path, encoding="utf-8"))
+        first = "".join(nb["cells"][0]["source"]) if nb["cells"] else ""
+        if "colab-badge.svg" not in first:
+            problems.append(f"NO COLAB BADGE    {nb_path} — first cell must be the Open in Colab badge")
+        elif f"blob/main/{nb_path}" not in first:
+            problems.append(f"COLAB BADGE WRONG PATH  {nb_path} — badge doesn't link to this file")
     return problems
 
 def teaching_notebooks():

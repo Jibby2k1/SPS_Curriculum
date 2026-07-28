@@ -9,6 +9,7 @@ formalism. Sessions are sized for **30–40 minute** live meetings.
 Every notebook, regardless of type, opens and closes the same way:
 
 ```
+[MD] [![Open in Colab](...)](https://colab.research.google.com/github/Jibby2k1/SPS_Curriculum/blob/main/<path to this file>)
 [MD] Content Produced by UF Signal Processing Society
      Authors: <names>
 [MD] # <Workshop Title>
@@ -20,6 +21,13 @@ Every notebook, regardless of type, opens and closes the same way:
      ... numbered content sections ...
 [MD] ## N. Conclusion                — recap + **Where next** links to related workshops
 ```
+
+**The Colab badge is the very first cell, before attribution.** It always points at *this exact
+file's* path in `main` — copy-paste the badge markdown from any existing notebook and just swap
+the path. `sync_blanks.py` copies it into blanks automatically (it's ordinary markdown, not a
+🎓 teacher note), so a blank's badge opens the parent notebook in Colab — that's expected, not a
+bug. Notebooks with no runnable code (Verilog/MATLAB/HLS drafts) still get the badge: it's free
+one-click reading access even when there's nothing to execute.
 
 ### Session markers
 
@@ -148,6 +156,7 @@ Different content types are organized differently; only the skeleton above is sh
 
 ## Checklist for a new or revised notebook
 
+- [ ] Colab badge as the first cell, linking to this file's own path
 - [ ] Shared skeleton (attribution → title → pitch → §0 motivation → §1 prereqs → ... → conclusion)
 - [ ] Session markers in-notebook, matching the topic README table
 - [ ] 💡 intuition cell before every proof/derivation/dense definition

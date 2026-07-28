@@ -137,9 +137,11 @@ Contributors: [**CONTRIBUTING.md**](./CONTRIBUTING.md) + `pip install -r require
 
 1. **Pick a session**, not a whole notebook — each topic README maps its notebooks into
    30–40 minute sessions with objectives and prerequisites.
-2. **Run the notebooks** in [Jupyter](https://jupyter.org/) or
-   [Google Colab](https://colab.research.google.com/) (upload the `.ipynb`, or open via
-   `File → Open notebook → GitHub` and paste this repo's URL).
+2. **Run the notebooks.** Every notebook opens straight into [Google
+   Colab](https://colab.research.google.com/) via the **Open in Colab** badge at the top — no
+   install, no clone, free GPU runtime available for the workshops that want one (Runtime → Change
+   runtime type → GPU). Prefer to run locally instead? Clone the repo and open with
+   [Jupyter](https://jupyter.org/).
 3. **Theory or application?** 📐 sessions are lecture/whiteboard-friendly; 🛠️ sessions
    are live-coding-friendly. Most workshops interleave both and cross-reference each
    other.
